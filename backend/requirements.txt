@@ -1,0 +1,37 @@
+# Project Chronos — Backend Dependencies
+
+# ── Core ──────────────────────────────────────────────────────────────
+fastapi==0.115.12
+uvicorn[standard]==0.30.6
+pydantic==2.11.1
+pydantic-settings==2.8.1
+tqdm==4.67.3
+aiohttp==3.13.5
+requests==2.32.3
+
+# ── LLM Orchestration ─────────────────────────────────────────────────
+langchain==0.3.25
+langchain-community==0.3.23
+langchain-ollama==0.3.3
+langgraph==0.2.74
+langgraph-checkpoint==2.1.2
+
+# ── Speech & Audio ────────────────────────────────────────────────────
+# Kokoro-TTS (local inference)
+kokoro==0.9.0
+# WhisperX for forced alignment (optional — falls back to faster-whisper)
+whisperx>=3.1.0
+# Audio processing
+pydub==2.24.0
+soundfile==0.22.0
+scipy==1.17.1
+numpy==2.4.4
+
+# ── CLI ───────────────────────────────────────────────────────────────
+typer==0.23.1
+click==8.1.8
+
+# ── Misc ──────────────────────────────────────────────────────────────
+pillow==11.2.1
+onnxruntime==1.24.4
+python-dotenv==1..0

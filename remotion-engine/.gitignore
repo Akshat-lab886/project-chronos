@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.cache/
+.remotion-cache/
+.output/
+
+# Workspace (regenerated at runtime)
+workspace/
+public/workspace/
+
+# Models cache
+models/
+
+# Misc
+.DS_Store
+*.log

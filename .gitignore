@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+!*.env.example
+
+# Models and caches
+**/hf_cache/
+**/.cache/
+**/.models-cache/
+remotion-engine/node_modules/
+remotion-engine/.pnpm-cache/
+remotion-engine/.cache/
+
+# Test artifacts
+test_frame*.png
+verify_*.png
+
+# Workspace output (regenerated)
+workspace/output/*.mp4
+workspace/assets/audio/*.wav
+workspace/assets/audio/*.mp3
+workspace/assets/images/*.png
+remotion-engine/public/workspace/
+backend/workspace/
+remotion-engine/workspace/
+workspace/
+
+# Remotion build artifacts
+remotion-engine/dist/
+remotion-engine/.remotion-cache/
+remotion-engine/.cache/
+
+# Logs
+*.log
+logs/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/

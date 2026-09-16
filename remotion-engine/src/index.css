@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Project Chronos — Custom base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Documentary-style text */
+.doc-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.doc-caption {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+}
+
+.doc-caption-highlight {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.doc-caption-active {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 16px rgba(0, 255, 255, 0.7);
+}
+
+/* Film grain animation */
+@keyframes grain-anim {
+  0%, 100% { background-position: 0 0; }
+  10%, 90% { background-position: 100% 100%; }
+}
+
+.grain-overlay {
+  animation: grain-anim 0.8s steps(10) infinite;
+}
+
+/* Pulse animation for map pins */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}

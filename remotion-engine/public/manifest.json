@@ -1,0 +1,6135 @@
+{
+  "project_id": "chronos-final-1789566196",
+  "title": "Documentary: The Secret Operation that Built India's Nuclear Defense in 1974",
+  "metadata": {
+    "title": "Documentary: The Secret Operation that Built India's Nuclear Defense in 1974",
+    "topic": "The Secret Operation that Built India's Nuclear Defense in 1974",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "total_duration_seconds": 480.0,
+    "total_frames": 18959,
+    "aspect_ratio": 1.7777777777777777,
+    "created_at": "2026-09-16T19:13:16.799345"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_00_hook",
+      "act_type": "HOOK",
+      "start_frame": 0,
+      "duration_frames": 2408,
+      "duration_seconds": 40.133,
+      "title": "Cold Open: The What really happened with the secret operation that built india's nuclear defense in 1974?",
+      "narrative": "In 1974, something extraordinary happened that changed everything. What if we told you the secret truth behind The Secret Operation that Built India's Nuclear Defense in 1974? This is the story that history books barely mention - the The Secret Operation that Built India's Nuclear Defense in 1974 - a tale of secret and operation. Picture this: a secret underground facility, hidden deep beneath the earth, where scientists worked around the clock in complete secrecy. What they accomplished would reshape the balance of power forever. Welcome to one of the most closely guarded secrets in modern history.",
+      "visual_tags": [
+        "dramatic",
+        "mysterious",
+        "historical",
+        "declassified"
+      ],
+      "search_queries": [
+        "declassified historical footage",
+        "dramatic reveal"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566224.png",
+        "fallback_prompt": "Cinematic dramatic documentary shot, declassified documents, dramatic lighting, 35mm film grain, desaturated colors",
+        "motion_preset": "KEN_BURNS_ZOOM_IN",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2408,
+        "overlay_spec": {
+          "type": "NONE",
+          "data": {}
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_00_hook_voiceover.wav",
+        "duration_seconds": 39.888,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 97,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "In",
+          "start_frame": 0,
+          "end_frame": 27,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974,",
+          "start_frame": 27,
+          "end_frame": 85,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "something",
+          "start_frame": 115,
+          "end_frame": 136,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "extraordinary",
+          "start_frame": 136,
+          "end_frame": 176,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "happened",
+          "start_frame": 176,
+          "end_frame": 205,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 205,
+          "end_frame": 222,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "changed",
+          "start_frame": 222,
+          "end_frame": 241,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "everything.",
+          "start_frame": 241,
+          "end_frame": 289,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "What",
+          "start_frame": 344,
+          "end_frame": 348,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "if",
+          "start_frame": 348,
+          "end_frame": 360,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 360,
+          "end_frame": 367,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "told",
+          "start_frame": 367,
+          "end_frame": 379,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "you",
+          "start_frame": 379,
+          "end_frame": 390,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 390,
+          "end_frame": 403,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 403,
+          "end_frame": 416,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "truth",
+          "start_frame": 416,
+          "end_frame": 438,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "behind",
+          "start_frame": 438,
+          "end_frame": 463,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 463,
+          "end_frame": 478,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 478,
+          "end_frame": 490,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 490,
+          "end_frame": 524,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 524,
+          "end_frame": 546,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 546,
+          "end_frame": 562,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 562,
+          "end_frame": 595,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 595,
+          "end_frame": 608,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 608,
+          "end_frame": 638,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 638,
+          "end_frame": 722,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974?",
+          "start_frame": 722,
+          "end_frame": 722,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "This",
+          "start_frame": 781,
+          "end_frame": 794,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "is",
+          "start_frame": 794,
+          "end_frame": 806,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 806,
+          "end_frame": 816,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "story",
+          "start_frame": 816,
+          "end_frame": 834,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 834,
+          "end_frame": 849,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "history",
+          "start_frame": 849,
+          "end_frame": 867,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "books",
+          "start_frame": 867,
+          "end_frame": 884,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "barely",
+          "start_frame": 884,
+          "end_frame": 908,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "mentioned,",
+          "start_frame": 908,
+          "end_frame": 937,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 949,
+          "end_frame": 951,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 951,
+          "end_frame": 978,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 978,
+          "end_frame": 1017,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 1017,
+          "end_frame": 1034,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 1034,
+          "end_frame": 1053,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 1053,
+          "end_frame": 1081,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 1081,
+          "end_frame": 1100,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 1100,
+          "end_frame": 1132,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 1132,
+          "end_frame": 1207,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974,",
+          "start_frame": 1207,
+          "end_frame": 1207,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1231,
+          "end_frame": 1232,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "tale",
+          "start_frame": 1232,
+          "end_frame": 1245,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 1245,
+          "end_frame": 1258,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 1258,
+          "end_frame": 1276,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1276,
+          "end_frame": 1291,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation.",
+          "start_frame": 1291,
+          "end_frame": 1332,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Picture",
+          "start_frame": 1369,
+          "end_frame": 1405,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "this,",
+          "start_frame": 1405,
+          "end_frame": 1429,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1443,
+          "end_frame": 1448,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 1448,
+          "end_frame": 1462,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "underground",
+          "start_frame": 1462,
+          "end_frame": 1495,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "facility,",
+          "start_frame": 1495,
+          "end_frame": 1524,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "hidden",
+          "start_frame": 1555,
+          "end_frame": 1566,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "deep",
+          "start_frame": 1566,
+          "end_frame": 1585,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "beneath",
+          "start_frame": 1585,
+          "end_frame": 1602,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1602,
+          "end_frame": 1617,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "earth,",
+          "start_frame": 1617,
+          "end_frame": 1632,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1652,
+          "end_frame": 1659,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "scientists",
+          "start_frame": 1659,
+          "end_frame": 1687,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "worked",
+          "start_frame": 1687,
+          "end_frame": 1711,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "around",
+          "start_frame": 1711,
+          "end_frame": 1729,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1729,
+          "end_frame": 1743,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "clock",
+          "start_frame": 1743,
+          "end_frame": 1756,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 1756,
+          "end_frame": 1771,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "complete",
+          "start_frame": 1771,
+          "end_frame": 1794,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "secrecy.",
+          "start_frame": 1794,
+          "end_frame": 1843,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "What",
+          "start_frame": 1892,
+          "end_frame": 1900,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "they",
+          "start_frame": 1900,
+          "end_frame": 1910,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "accomplished",
+          "start_frame": 1910,
+          "end_frame": 1937,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 1937,
+          "end_frame": 1962,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "reshape",
+          "start_frame": 1962,
+          "end_frame": 1983,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1983,
+          "end_frame": 1996,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "balance",
+          "start_frame": 1996,
+          "end_frame": 2012,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2012,
+          "end_frame": 2025,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "power",
+          "start_frame": 2025,
+          "end_frame": 2043,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "forever.",
+          "start_frame": 2043,
+          "end_frame": 2074,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Welcome",
+          "start_frame": 2136,
+          "end_frame": 2152,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 2152,
+          "end_frame": 2166,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "one",
+          "start_frame": 2166,
+          "end_frame": 2174,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2174,
+          "end_frame": 2186,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2186,
+          "end_frame": 2188,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "most",
+          "start_frame": 2188,
+          "end_frame": 2205,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "closely",
+          "start_frame": 2205,
+          "end_frame": 2227,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "guarded",
+          "start_frame": 2227,
+          "end_frame": 2253,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "secrets",
+          "start_frame": 2253,
+          "end_frame": 2276,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 2276,
+          "end_frame": 2296,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "modern",
+          "start_frame": 2296,
+          "end_frame": 2308,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "history.",
+          "start_frame": 2308,
+          "end_frame": 2341,
+          "is_highlight": true,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_01_context",
+      "act_type": "CONTEXT",
+      "start_frame": 2408,
+      "duration_frames": 2383,
+      "duration_seconds": 39.717,
+      "title": "Setting the Stage: Origins & Background",
+      "narrative": "To understand The Secret Operation that Built India's Nuclear Defense in 1974, we must go back to 1974. The foundations were laid when the earliest documented events of The Secret Operation that Built India's Nuclear Defense in 1974. Key figures like the key architects shaped the early direction. This was a time when the world was divided, tensions were high, and every nation was racing to develop new technologies. Behind closed doors, decisions were made that would have far-reaching consequences. We trace the origins of this remarkable story through declassified documents, insider testimonies, and historical records.",
+      "visual_tags": [
+        "historical map",
+        "archive footage",
+        "timeline"
+      ],
+      "search_queries": [
+        "historical map animation",
+        "archive footage"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566225.png",
+        "fallback_prompt": "Historical map animation, vintage parchment texture, old world maps, sepia tone, cinematic style",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2383,
+        "overlay_spec": {
+          "type": "MAP",
+          "data": {
+            "coordinates": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "zoom_level": 2
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_01_context_voiceover.wav",
+        "duration_seconds": 43.008,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 96,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "To",
+          "start_frame": 0,
+          "end_frame": 28,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "understand",
+          "start_frame": 28,
+          "end_frame": 60,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 60,
+          "end_frame": 75,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 75,
+          "end_frame": 87,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 87,
+          "end_frame": 123,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 123,
+          "end_frame": 144,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 144,
+          "end_frame": 160,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 160,
+          "end_frame": 190,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 190,
+          "end_frame": 207,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 207,
+          "end_frame": 236,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 236,
+          "end_frame": 319,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974,",
+          "start_frame": 319,
+          "end_frame": 319,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 343,
+          "end_frame": 350,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "must",
+          "start_frame": 350,
+          "end_frame": 367,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "go",
+          "start_frame": 367,
+          "end_frame": 378,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "back",
+          "start_frame": 378,
+          "end_frame": 396,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 396,
+          "end_frame": 472,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974.",
+          "start_frame": 472,
+          "end_frame": 472,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 531,
+          "end_frame": 542,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "foundations",
+          "start_frame": 542,
+          "end_frame": 576,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 576,
+          "end_frame": 595,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "laid",
+          "start_frame": 595,
+          "end_frame": 608,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "when",
+          "start_frame": 608,
+          "end_frame": 620,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 620,
+          "end_frame": 628,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "earliest",
+          "start_frame": 628,
+          "end_frame": 655,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "documented",
+          "start_frame": 655,
+          "end_frame": 686,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "events",
+          "start_frame": 686,
+          "end_frame": 716,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 716,
+          "end_frame": 728,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 728,
+          "end_frame": 738,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 738,
+          "end_frame": 751,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 751,
+          "end_frame": 784,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 784,
+          "end_frame": 807,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 807,
+          "end_frame": 824,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 824,
+          "end_frame": 855,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 855,
+          "end_frame": 870,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 870,
+          "end_frame": 903,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 903,
+          "end_frame": 922,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974.",
+          "start_frame": 922,
+          "end_frame": 979,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "He",
+          "start_frame": 1046,
+          "end_frame": 1060,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "figures",
+          "start_frame": 1060,
+          "end_frame": 1083,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "like",
+          "start_frame": 1083,
+          "end_frame": 1102,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1102,
+          "end_frame": 1113,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "key",
+          "start_frame": 1113,
+          "end_frame": 1125,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "architects",
+          "start_frame": 1125,
+          "end_frame": 1159,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "shaped",
+          "start_frame": 1159,
+          "end_frame": 1182,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1182,
+          "end_frame": 1197,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "early",
+          "start_frame": 1197,
+          "end_frame": 1209,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "direction.",
+          "start_frame": 1209,
+          "end_frame": 1242,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "This",
+          "start_frame": 1302,
+          "end_frame": 1315,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 1315,
+          "end_frame": 1330,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1330,
+          "end_frame": 1338,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "time",
+          "start_frame": 1338,
+          "end_frame": 1350,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "when",
+          "start_frame": 1350,
+          "end_frame": 1360,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1360,
+          "end_frame": 1370,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "world",
+          "start_frame": 1370,
+          "end_frame": 1378,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 1378,
+          "end_frame": 1392,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "divided,",
+          "start_frame": 1392,
+          "end_frame": 1418,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "tensions",
+          "start_frame": 1452,
+          "end_frame": 1461,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1461,
+          "end_frame": 1479,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "high,",
+          "start_frame": 1479,
+          "end_frame": 1496,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1522,
+          "end_frame": 1528,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "every",
+          "start_frame": 1528,
+          "end_frame": 1545,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "nation",
+          "start_frame": 1545,
+          "end_frame": 1563,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 1563,
+          "end_frame": 1578,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "racing",
+          "start_frame": 1578,
+          "end_frame": 1596,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1596,
+          "end_frame": 1612,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "develop",
+          "start_frame": 1612,
+          "end_frame": 1633,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "new",
+          "start_frame": 1633,
+          "end_frame": 1651,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "technologies.",
+          "start_frame": 1651,
+          "end_frame": 1696,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Behind",
+          "start_frame": 1767,
+          "end_frame": 1782,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "closed",
+          "start_frame": 1782,
+          "end_frame": 1808,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "doors,",
+          "start_frame": 1808,
+          "end_frame": 1837,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decisions",
+          "start_frame": 1861,
+          "end_frame": 1882,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1882,
+          "end_frame": 1900,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "made",
+          "start_frame": 1900,
+          "end_frame": 1915,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 1915,
+          "end_frame": 1927,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 1927,
+          "end_frame": 1935,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "have",
+          "start_frame": 1935,
+          "end_frame": 1945,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "far",
+          "start_frame": 1945,
+          "end_frame": 1959,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "-reaching",
+          "start_frame": 1959,
+          "end_frame": 1978,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "consequences.",
+          "start_frame": 1978,
+          "end_frame": 2019,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "We",
+          "start_frame": 2092,
+          "end_frame": 2108,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "traced",
+          "start_frame": 2108,
+          "end_frame": 2126,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2126,
+          "end_frame": 2142,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "origins",
+          "start_frame": 2142,
+          "end_frame": 2160,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2160,
+          "end_frame": 2174,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "this",
+          "start_frame": 2174,
+          "end_frame": 2187,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "remarkable",
+          "start_frame": 2187,
+          "end_frame": 2210,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "story",
+          "start_frame": 2210,
+          "end_frame": 2244,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "through",
+          "start_frame": 2244,
+          "end_frame": 2258,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "declassified",
+          "start_frame": 2258,
+          "end_frame": 2301,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "documents,",
+          "start_frame": 2301,
+          "end_frame": 2334,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "insider",
+          "start_frame": 2378,
+          "end_frame": 2386,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "testimonies,",
+          "start_frame": 2386,
+          "end_frame": 2438,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 2460,
+          "end_frame": 2467,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "historical",
+          "start_frame": 2467,
+          "end_frame": 2492,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "records.",
+          "start_frame": 2492,
+          "end_frame": 2524,
+          "is_highlight": true,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02_conflict",
+      "act_type": "CONFLICT",
+      "start_frame": 4791,
+      "duration_frames": 2383,
+      "duration_seconds": 39.717,
+      "title": "The Rising Tension: Escalating Challenges",
+      "narrative": "As The Secret Operation that Built India's Nuclear Defense in 1974 progressed, tensions mounted. The situation became increasingly precarious when escalating tensions threatened to unravel everything. This marked a turning point where regional forces clashed. What had started as a carefully planned operation began to show signs of unraveling. Communication lines were being intercepted, security protocols were being questioned. There were whispers of betrayal, concerns about compromised assets, and fears that the operation might be exposed. The stakes were immeasurable, and the consequences of failure were unthinkable. Yet the project continued, driven by determination and desperation.",
+      "visual_tags": [
+        "tension",
+        "conflict",
+        "war room"
+      ],
+      "search_queries": [
+        "war room maps",
+        "tense meetings"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566225.png",
+        "fallback_prompt": "War room planning, maps with red strings, intense discussions, dramatic lighting, tension atmosphere",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2383,
+        "overlay_spec": {
+          "type": "STAT_COUNTER",
+          "data": {
+            "label": "Key figure mentioned in topic: 1974",
+            "start_value": 0,
+            "end_value": 1974,
+            "unit": ""
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_02_conflict_voiceover.wav",
+        "duration_seconds": 46.2,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 96,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "As",
+          "start_frame": 0,
+          "end_frame": 24,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 24,
+          "end_frame": 39,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 39,
+          "end_frame": 51,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 51,
+          "end_frame": 86,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 86,
+          "end_frame": 106,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 106,
+          "end_frame": 123,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 123,
+          "end_frame": 157,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 157,
+          "end_frame": 170,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 170,
+          "end_frame": 200,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 200,
+          "end_frame": 220,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974",
+          "start_frame": 220,
+          "end_frame": 268,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "progressed,",
+          "start_frame": 268,
+          "end_frame": 306,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "tensions",
+          "start_frame": 332,
+          "end_frame": 351,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "mounted.",
+          "start_frame": 351,
+          "end_frame": 392,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 450,
+          "end_frame": 454,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "situation",
+          "start_frame": 454,
+          "end_frame": 488,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "became",
+          "start_frame": 488,
+          "end_frame": 514,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "increasingly",
+          "start_frame": 514,
+          "end_frame": 550,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "precarious",
+          "start_frame": 550,
+          "end_frame": 595,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "when",
+          "start_frame": 595,
+          "end_frame": 613,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "escalating",
+          "start_frame": 613,
+          "end_frame": 645,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "tensions",
+          "start_frame": 645,
+          "end_frame": 675,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "threatened",
+          "start_frame": 675,
+          "end_frame": 699,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 699,
+          "end_frame": 715,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "unravel",
+          "start_frame": 715,
+          "end_frame": 734,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "everything.",
+          "start_frame": 734,
+          "end_frame": 777,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "This",
+          "start_frame": 838,
+          "end_frame": 849,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "marked",
+          "start_frame": 849,
+          "end_frame": 868,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 868,
+          "end_frame": 877,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "turning",
+          "start_frame": 877,
+          "end_frame": 890,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "point",
+          "start_frame": 890,
+          "end_frame": 909,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "where",
+          "start_frame": 909,
+          "end_frame": 924,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "regional",
+          "start_frame": 924,
+          "end_frame": 945,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "forces",
+          "start_frame": 945,
+          "end_frame": 969,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "clashed.",
+          "start_frame": 969,
+          "end_frame": 1011,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "What",
+          "start_frame": 1071,
+          "end_frame": 1078,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 1078,
+          "end_frame": 1093,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "started",
+          "start_frame": 1093,
+          "end_frame": 1111,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "as",
+          "start_frame": 1111,
+          "end_frame": 1128,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1128,
+          "end_frame": 1136,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "carefully",
+          "start_frame": 1136,
+          "end_frame": 1152,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "planned",
+          "start_frame": 1152,
+          "end_frame": 1180,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 1180,
+          "end_frame": 1212,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "began",
+          "start_frame": 1212,
+          "end_frame": 1240,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1240,
+          "end_frame": 1255,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "show",
+          "start_frame": 1255,
+          "end_frame": 1268,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "signs",
+          "start_frame": 1268,
+          "end_frame": 1286,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 1286,
+          "end_frame": 1299,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "unraveling.",
+          "start_frame": 1299,
+          "end_frame": 1380,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Communication",
+          "start_frame": 1402,
+          "end_frame": 1430,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "lines",
+          "start_frame": 1430,
+          "end_frame": 1456,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1456,
+          "end_frame": 1468,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "being",
+          "start_frame": 1468,
+          "end_frame": 1488,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "intercepted,",
+          "start_frame": 1488,
+          "end_frame": 1536,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "security",
+          "start_frame": 1557,
+          "end_frame": 1572,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "protocols",
+          "start_frame": 1572,
+          "end_frame": 1605,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1605,
+          "end_frame": 1626,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "being",
+          "start_frame": 1626,
+          "end_frame": 1642,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "questioned.",
+          "start_frame": 1642,
+          "end_frame": 1671,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "There",
+          "start_frame": 1722,
+          "end_frame": 1744,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1744,
+          "end_frame": 1758,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "whispers",
+          "start_frame": 1758,
+          "end_frame": 1779,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 1779,
+          "end_frame": 1795,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "betrayal,",
+          "start_frame": 1795,
+          "end_frame": 1819,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "concerns",
+          "start_frame": 1844,
+          "end_frame": 1858,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "about",
+          "start_frame": 1858,
+          "end_frame": 1882,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "compromised",
+          "start_frame": 1882,
+          "end_frame": 1915,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "assets",
+          "start_frame": 1915,
+          "end_frame": 1953,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1953,
+          "end_frame": 1986,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "fears",
+          "start_frame": 1986,
+          "end_frame": 2005,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 2005,
+          "end_frame": 2019,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2019,
+          "end_frame": 2030,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 2030,
+          "end_frame": 2053,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "might",
+          "start_frame": 2053,
+          "end_frame": 2074,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "be",
+          "start_frame": 2074,
+          "end_frame": 2091,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "exposed.",
+          "start_frame": 2091,
+          "end_frame": 2122,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 2184,
+          "end_frame": 2197,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "stakes",
+          "start_frame": 2197,
+          "end_frame": 2211,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 2211,
+          "end_frame": 2226,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "immeasurable",
+          "start_frame": 2226,
+          "end_frame": 2258,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 2258,
+          "end_frame": 2286,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2286,
+          "end_frame": 2304,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "consequences",
+          "start_frame": 2304,
+          "end_frame": 2325,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2325,
+          "end_frame": 2348,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "failure",
+          "start_frame": 2348,
+          "end_frame": 2366,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 2366,
+          "end_frame": 2386,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "unthinkable.",
+          "start_frame": 2386,
+          "end_frame": 2422,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Yet",
+          "start_frame": 2482,
+          "end_frame": 2492,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2492,
+          "end_frame": 2504,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "project",
+          "start_frame": 2504,
+          "end_frame": 2524,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "continued,",
+          "start_frame": 2524,
+          "end_frame": 2560,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "driven",
+          "start_frame": 2583,
+          "end_frame": 2594,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "by",
+          "start_frame": 2594,
+          "end_frame": 2612,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "determination",
+          "start_frame": 2612,
+          "end_frame": 2647,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 2647,
+          "end_frame": 2678,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "desperation.",
+          "start_frame": 2678,
+          "end_frame": 2710,
+          "is_highlight": true,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03_conflict",
+      "act_type": "CONFLICT",
+      "start_frame": 7174,
+      "duration_frames": 2035,
+      "duration_seconds": 33.917,
+      "title": "Stakes & Consequences",
+      "narrative": "The stakes were higher than anyone realized. The future of entire nations hung in the balance. Every decision had cascading effects. The window was closing fast. The implications extended far beyond the immediate circle of operatives. If the operation were exposed, the fallout would be devastating - diplomatic crises, economic collapse. External observers were beginning to notice unusual activity. Alarms were being raised, investigations launched. Time was running out, and the margin for error had effectively shrunk to zero. Every second counted.",
+      "visual_tags": [
+        "close up",
+        "urgent",
+        "clock"
+      ],
+      "search_queries": [
+        "ticking clock",
+        "urgent documents"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566226.png",
+        "fallback_prompt": "Close-up of ticking clock, urgent documents, tension-filled shots, dramatic lighting",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2035,
+        "overlay_spec": {
+          "type": "STAT_COUNTER",
+          "data": {
+            "label": "Key figure mentioned in topic: 1974",
+            "start_value": 0,
+            "end_value": 1974,
+            "unit": ""
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_03_conflict_voiceover.wav",
+        "duration_seconds": 40.32,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 82,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "The",
+          "start_frame": 0,
+          "end_frame": 25,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "stakes",
+          "start_frame": 25,
+          "end_frame": 42,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 42,
+          "end_frame": 57,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "higher",
+          "start_frame": 57,
+          "end_frame": 75,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "than",
+          "start_frame": 75,
+          "end_frame": 92,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "anyone",
+          "start_frame": 92,
+          "end_frame": 109,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "realized.",
+          "start_frame": 109,
+          "end_frame": 148,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 218,
+          "end_frame": 219,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "future",
+          "start_frame": 219,
+          "end_frame": 240,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 240,
+          "end_frame": 254,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "entire",
+          "start_frame": 254,
+          "end_frame": 273,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "nations",
+          "start_frame": 273,
+          "end_frame": 298,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "hung",
+          "start_frame": 298,
+          "end_frame": 319,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 319,
+          "end_frame": 328,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 328,
+          "end_frame": 333,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "balance.",
+          "start_frame": 333,
+          "end_frame": 361,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Every",
+          "start_frame": 424,
+          "end_frame": 438,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decision",
+          "start_frame": 438,
+          "end_frame": 462,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 462,
+          "end_frame": 486,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "cascading",
+          "start_frame": 486,
+          "end_frame": 514,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "effects.",
+          "start_frame": 514,
+          "end_frame": 553,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 613,
+          "end_frame": 622,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "window",
+          "start_frame": 622,
+          "end_frame": 640,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 640,
+          "end_frame": 656,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "closing",
+          "start_frame": 656,
+          "end_frame": 679,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "fast.",
+          "start_frame": 679,
+          "end_frame": 720,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 771,
+          "end_frame": 786,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "implications",
+          "start_frame": 786,
+          "end_frame": 822,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "extended",
+          "start_frame": 822,
+          "end_frame": 856,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "far",
+          "start_frame": 856,
+          "end_frame": 883,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "beyond",
+          "start_frame": 883,
+          "end_frame": 907,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 907,
+          "end_frame": 921,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "immediate",
+          "start_frame": 921,
+          "end_frame": 940,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "circle",
+          "start_frame": 940,
+          "end_frame": 964,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 964,
+          "end_frame": 978,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "operatives.",
+          "start_frame": 978,
+          "end_frame": 1012,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "If",
+          "start_frame": 1076,
+          "end_frame": 1083,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1083,
+          "end_frame": 1098,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 1098,
+          "end_frame": 1120,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1120,
+          "end_frame": 1147,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "exposed,",
+          "start_frame": 1147,
+          "end_frame": 1176,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1200,
+          "end_frame": 1212,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "fallout",
+          "start_frame": 1212,
+          "end_frame": 1228,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 1228,
+          "end_frame": 1240,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "be",
+          "start_frame": 1240,
+          "end_frame": 1251,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "devastating",
+          "start_frame": 1251,
+          "end_frame": 1278,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "diplomatic",
+          "start_frame": 1278,
+          "end_frame": 1321,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "crises,",
+          "start_frame": 1321,
+          "end_frame": 1357,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "economic",
+          "start_frame": 1380,
+          "end_frame": 1400,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "collapse.",
+          "start_frame": 1400,
+          "end_frame": 1441,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "External",
+          "start_frame": 1512,
+          "end_frame": 1525,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "observers",
+          "start_frame": 1525,
+          "end_frame": 1555,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1555,
+          "end_frame": 1575,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "beginning",
+          "start_frame": 1575,
+          "end_frame": 1594,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1594,
+          "end_frame": 1611,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "notice",
+          "start_frame": 1611,
+          "end_frame": 1627,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "unusual",
+          "start_frame": 1627,
+          "end_frame": 1657,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "activity.",
+          "start_frame": 1657,
+          "end_frame": 1700,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Alarm's",
+          "start_frame": 1748,
+          "end_frame": 1788,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1788,
+          "end_frame": 1796,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "being",
+          "start_frame": 1796,
+          "end_frame": 1812,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "raised,",
+          "start_frame": 1812,
+          "end_frame": 1833,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "investigations",
+          "start_frame": 1854,
+          "end_frame": 1891,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "launched.",
+          "start_frame": 1891,
+          "end_frame": 1929,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Time",
+          "start_frame": 1996,
+          "end_frame": 2002,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 2002,
+          "end_frame": 2013,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "running",
+          "start_frame": 2013,
+          "end_frame": 2030,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "out,",
+          "start_frame": 2030,
+          "end_frame": 2055,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 2067,
+          "end_frame": 2073,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2073,
+          "end_frame": 2082,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "margin",
+          "start_frame": 2082,
+          "end_frame": 2100,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "for",
+          "start_frame": 2100,
+          "end_frame": 2119,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "error",
+          "start_frame": 2119,
+          "end_frame": 2136,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 2136,
+          "end_frame": 2150,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "effectively",
+          "start_frame": 2150,
+          "end_frame": 2175,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "shrunk",
+          "start_frame": 2175,
+          "end_frame": 2202,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 2202,
+          "end_frame": 2212,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "zero.",
+          "start_frame": 2212,
+          "end_frame": 2240,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "Every",
+          "start_frame": 2299,
+          "end_frame": 2316,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "second",
+          "start_frame": 2316,
+          "end_frame": 2337,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "counted.",
+          "start_frame": 2337,
+          "end_frame": 2364,
+          "is_highlight": true,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04_climax",
+      "act_type": "CLIMAX",
+      "start_frame": 9209,
+      "duration_frames": 2160,
+      "duration_seconds": 36.0,
+      "title": "The Climax: Critical Revelations",
+      "narrative": "This is where everything changed. On 1974, the decisive moment came when the decisive operation was executed. The outcome reshaped the landscape. What had been building for months all came to a head in a single, defining moment. The consequences rippled outward, affecting not just the immediate participants but entire populations. Secrets were revealed, alliances were forged and broken. In the aftermath, those involved would have to live with the knowledge of what they had done. The world would never look at things the same way again.",
+      "visual_tags": [
+        "explosion",
+        "revelation",
+        "climax"
+      ],
+      "search_queries": [
+        "explosion footage",
+        "dramatic reveal"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566227.png",
+        "fallback_prompt": "Dramatic historical explosion, revelation moment, cinematic lighting, high contrast, film grain",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2160,
+        "overlay_spec": {
+          "type": "NEWSPAPER",
+          "data": {
+            "headline": "Historical Archive: The Climax: Critical Revelations...",
+            "source": "Project Chronos Archives"
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_04_climax_voiceover.wav",
+        "duration_seconds": 36.84,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 87,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "This",
+          "start_frame": 0,
+          "end_frame": 25,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "is",
+          "start_frame": 25,
+          "end_frame": 40,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "where",
+          "start_frame": 40,
+          "end_frame": 52,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "everything",
+          "start_frame": 52,
+          "end_frame": 75,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "changed.",
+          "start_frame": 75,
+          "end_frame": 117,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "On",
+          "start_frame": 176,
+          "end_frame": 186,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974,",
+          "start_frame": 186,
+          "end_frame": 245,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 280,
+          "end_frame": 288,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decisive",
+          "start_frame": 288,
+          "end_frame": 310,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "moment",
+          "start_frame": 310,
+          "end_frame": 337,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "came",
+          "start_frame": 337,
+          "end_frame": 356,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "when",
+          "start_frame": 356,
+          "end_frame": 366,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 366,
+          "end_frame": 374,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decisive",
+          "start_frame": 374,
+          "end_frame": 393,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 393,
+          "end_frame": 428,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 428,
+          "end_frame": 453,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "executed.",
+          "start_frame": 453,
+          "end_frame": 486,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 552,
+          "end_frame": 560,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "outcome",
+          "start_frame": 560,
+          "end_frame": 584,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "reshaped",
+          "start_frame": 584,
+          "end_frame": 614,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 614,
+          "end_frame": 628,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "landscape.",
+          "start_frame": 628,
+          "end_frame": 660,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "What",
+          "start_frame": 730,
+          "end_frame": 734,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 734,
+          "end_frame": 745,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "been",
+          "start_frame": 745,
+          "end_frame": 754,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "building",
+          "start_frame": 754,
+          "end_frame": 772,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "for",
+          "start_frame": 772,
+          "end_frame": 787,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "months",
+          "start_frame": 787,
+          "end_frame": 804,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "all",
+          "start_frame": 804,
+          "end_frame": 823,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "came",
+          "start_frame": 823,
+          "end_frame": 836,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 836,
+          "end_frame": 850,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 850,
+          "end_frame": 858,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "head",
+          "start_frame": 858,
+          "end_frame": 866,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 866,
+          "end_frame": 877,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 877,
+          "end_frame": 882,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "single,",
+          "start_frame": 882,
+          "end_frame": 906,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "defining",
+          "start_frame": 922,
+          "end_frame": 937,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "moment.",
+          "start_frame": 937,
+          "end_frame": 976,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 1036,
+          "end_frame": 1042,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "consequences",
+          "start_frame": 1042,
+          "end_frame": 1076,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "rippled",
+          "start_frame": 1076,
+          "end_frame": 1107,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "outward,",
+          "start_frame": 1107,
+          "end_frame": 1136,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "affecting",
+          "start_frame": 1160,
+          "end_frame": 1174,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "not",
+          "start_frame": 1174,
+          "end_frame": 1198,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "just",
+          "start_frame": 1198,
+          "end_frame": 1218,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1218,
+          "end_frame": 1226,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "immediate",
+          "start_frame": 1226,
+          "end_frame": 1250,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "participants",
+          "start_frame": 1250,
+          "end_frame": 1281,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "but",
+          "start_frame": 1281,
+          "end_frame": 1309,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "entire",
+          "start_frame": 1309,
+          "end_frame": 1330,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "populations.",
+          "start_frame": 1330,
+          "end_frame": 1364,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Secrets",
+          "start_frame": 1454,
+          "end_frame": 1471,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1471,
+          "end_frame": 1488,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "revealed,",
+          "start_frame": 1488,
+          "end_frame": 1509,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "alliances",
+          "start_frame": 1540,
+          "end_frame": 1561,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1561,
+          "end_frame": 1581,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "forged",
+          "start_frame": 1581,
+          "end_frame": 1602,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1602,
+          "end_frame": 1618,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "broken.",
+          "start_frame": 1618,
+          "end_frame": 1639,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "In",
+          "start_frame": 1680,
+          "end_frame": 1708,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1708,
+          "end_frame": 1725,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "aftermath,",
+          "start_frame": 1725,
+          "end_frame": 1749,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "those",
+          "start_frame": 1768,
+          "end_frame": 1784,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "involved",
+          "start_frame": 1784,
+          "end_frame": 1806,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 1806,
+          "end_frame": 1825,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "have",
+          "start_frame": 1825,
+          "end_frame": 1834,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1834,
+          "end_frame": 1843,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "live",
+          "start_frame": 1843,
+          "end_frame": 1852,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "with",
+          "start_frame": 1852,
+          "end_frame": 1864,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1864,
+          "end_frame": 1878,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "knowledge",
+          "start_frame": 1878,
+          "end_frame": 1888,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 1888,
+          "end_frame": 1903,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "what",
+          "start_frame": 1903,
+          "end_frame": 1910,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "they",
+          "start_frame": 1910,
+          "end_frame": 1917,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 1917,
+          "end_frame": 1928,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "done.",
+          "start_frame": 1928,
+          "end_frame": 1957,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 2002,
+          "end_frame": 2011,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "world",
+          "start_frame": 2011,
+          "end_frame": 2029,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 2029,
+          "end_frame": 2042,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "never",
+          "start_frame": 2042,
+          "end_frame": 2055,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "look",
+          "start_frame": 2055,
+          "end_frame": 2072,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "at",
+          "start_frame": 2072,
+          "end_frame": 2082,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "things",
+          "start_frame": 2082,
+          "end_frame": 2098,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2098,
+          "end_frame": 2110,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "same",
+          "start_frame": 2110,
+          "end_frame": 2124,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "way",
+          "start_frame": 2124,
+          "end_frame": 2140,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "again.",
+          "start_frame": 2140,
+          "end_frame": 2161,
+          "is_highlight": false,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05_climax",
+      "act_type": "CLIMAX",
+      "start_frame": 11369,
+      "duration_frames": 2606,
+      "duration_seconds": 43.433,
+      "title": "The Aftermath: Consequences Unfold",
+      "narrative": "The dust had barely settled when the full extent of what had transpired began to sink in. International observers were scrambling to understand the implications of this singular event. Diplomatic channels were abuzz with urgent communications, and emergency sessions were convened at the highest levels. The political ramifications were immediate and far-reaching. Allied nations were caught off guard, adversaries saw opportunity, and neutral parties found themselves forced to take sides. In the months that followed, the landscape of international relations would be permanently altered. This was not just an event - it was a turning point that would define the next decade of global politics.",
+      "visual_tags": [
+        "aftermath",
+        "consequences",
+        "diplomatic",
+        "crisis"
+      ],
+      "search_queries": [
+        "diplomatic crisis meeting",
+        "emergency session"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566228.png",
+        "fallback_prompt": "Diplomatic crisis meeting, emergency sessions, politicians in discussion, serious atmosphere",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2606,
+        "overlay_spec": {
+          "type": "NEWSPAPER",
+          "data": {
+            "headline": "Historical Archive: The Aftermath: Consequences Unfold...",
+            "source": "Project Chronos Archives"
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_05_climax_voiceover.wav",
+        "duration_seconds": 43.416,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 105,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "The",
+          "start_frame": 0,
+          "end_frame": 22,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "dust",
+          "start_frame": 22,
+          "end_frame": 39,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 39,
+          "end_frame": 54,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "barely",
+          "start_frame": 54,
+          "end_frame": 72,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "settled",
+          "start_frame": 72,
+          "end_frame": 92,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "when",
+          "start_frame": 92,
+          "end_frame": 106,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 106,
+          "end_frame": 117,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "full",
+          "start_frame": 117,
+          "end_frame": 132,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "extent",
+          "start_frame": 132,
+          "end_frame": 153,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 153,
+          "end_frame": 166,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "what",
+          "start_frame": 166,
+          "end_frame": 172,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "had",
+          "start_frame": 172,
+          "end_frame": 189,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "transpired",
+          "start_frame": 189,
+          "end_frame": 225,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "began",
+          "start_frame": 225,
+          "end_frame": 248,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 248,
+          "end_frame": 260,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "sink",
+          "start_frame": 260,
+          "end_frame": 272,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "in.",
+          "start_frame": 272,
+          "end_frame": 313,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "International",
+          "start_frame": 366,
+          "end_frame": 386,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "observers",
+          "start_frame": 386,
+          "end_frame": 416,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 416,
+          "end_frame": 440,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "scrambling",
+          "start_frame": 440,
+          "end_frame": 460,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 460,
+          "end_frame": 489,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "understand",
+          "start_frame": 489,
+          "end_frame": 512,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 512,
+          "end_frame": 532,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "implications",
+          "start_frame": 532,
+          "end_frame": 559,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 559,
+          "end_frame": 580,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "this",
+          "start_frame": 580,
+          "end_frame": 592,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "singular",
+          "start_frame": 592,
+          "end_frame": 613,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "event.",
+          "start_frame": 613,
+          "end_frame": 652,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "Diplomatic",
+          "start_frame": 715,
+          "end_frame": 732,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "channels",
+          "start_frame": 732,
+          "end_frame": 760,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 760,
+          "end_frame": 778,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "above's",
+          "start_frame": 778,
+          "end_frame": 805,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "with",
+          "start_frame": 805,
+          "end_frame": 814,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "urgent",
+          "start_frame": 814,
+          "end_frame": 831,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "communications,",
+          "start_frame": 831,
+          "end_frame": 868,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 912,
+          "end_frame": 920,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "emergency",
+          "start_frame": 920,
+          "end_frame": 946,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "sessions",
+          "start_frame": 946,
+          "end_frame": 976,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 976,
+          "end_frame": 997,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "convened",
+          "start_frame": 997,
+          "end_frame": 1020,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "at",
+          "start_frame": 1020,
+          "end_frame": 1035,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1035,
+          "end_frame": 1045,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "highest",
+          "start_frame": 1045,
+          "end_frame": 1058,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "levels.",
+          "start_frame": 1058,
+          "end_frame": 1088,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 1150,
+          "end_frame": 1156,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "political",
+          "start_frame": 1156,
+          "end_frame": 1183,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "ramifications",
+          "start_frame": 1183,
+          "end_frame": 1226,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1226,
+          "end_frame": 1254,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "immediate",
+          "start_frame": 1254,
+          "end_frame": 1272,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1272,
+          "end_frame": 1292,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "far",
+          "start_frame": 1292,
+          "end_frame": 1306,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "-reaching.",
+          "start_frame": 1306,
+          "end_frame": 1328,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Allied",
+          "start_frame": 1396,
+          "end_frame": 1412,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "nations",
+          "start_frame": 1412,
+          "end_frame": 1437,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1437,
+          "end_frame": 1454,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "caught",
+          "start_frame": 1454,
+          "end_frame": 1466,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "off",
+          "start_frame": 1466,
+          "end_frame": 1480,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "guard,",
+          "start_frame": 1480,
+          "end_frame": 1500,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "adversaries",
+          "start_frame": 1526,
+          "end_frame": 1556,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "saw",
+          "start_frame": 1556,
+          "end_frame": 1572,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "opportunity,",
+          "start_frame": 1572,
+          "end_frame": 1602,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1640,
+          "end_frame": 1651,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "neutral",
+          "start_frame": 1651,
+          "end_frame": 1668,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "parties",
+          "start_frame": 1668,
+          "end_frame": 1692,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "found",
+          "start_frame": 1692,
+          "end_frame": 1712,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "themselves",
+          "start_frame": 1712,
+          "end_frame": 1737,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "forced",
+          "start_frame": 1737,
+          "end_frame": 1765,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1765,
+          "end_frame": 1774,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "take",
+          "start_frame": 1774,
+          "end_frame": 1790,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "sides.",
+          "start_frame": 1790,
+          "end_frame": 1825,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "In",
+          "start_frame": 1879,
+          "end_frame": 1887,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1887,
+          "end_frame": 1894,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "months",
+          "start_frame": 1894,
+          "end_frame": 1911,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 1911,
+          "end_frame": 1928,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "followed,",
+          "start_frame": 1928,
+          "end_frame": 1948,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1972,
+          "end_frame": 1978,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "landscape",
+          "start_frame": 1978,
+          "end_frame": 2001,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2001,
+          "end_frame": 2025,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "international",
+          "start_frame": 2025,
+          "end_frame": 2054,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "relations",
+          "start_frame": 2054,
+          "end_frame": 2088,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 2088,
+          "end_frame": 2107,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "be",
+          "start_frame": 2107,
+          "end_frame": 2116,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "permanently",
+          "start_frame": 2116,
+          "end_frame": 2142,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "altered.",
+          "start_frame": 2142,
+          "end_frame": 2178,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "This",
+          "start_frame": 2234,
+          "end_frame": 2246,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 2246,
+          "end_frame": 2258,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "not",
+          "start_frame": 2258,
+          "end_frame": 2275,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "just",
+          "start_frame": 2275,
+          "end_frame": 2290,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "an",
+          "start_frame": 2290,
+          "end_frame": 2299,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "event,",
+          "start_frame": 2299,
+          "end_frame": 2316,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "it",
+          "start_frame": 2320,
+          "end_frame": 2328,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "was",
+          "start_frame": 2328,
+          "end_frame": 2340,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 2340,
+          "end_frame": 2347,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "turning",
+          "start_frame": 2347,
+          "end_frame": 2362,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "point",
+          "start_frame": 2362,
+          "end_frame": 2383,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 2383,
+          "end_frame": 2390,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "would",
+          "start_frame": 2390,
+          "end_frame": 2402,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "define",
+          "start_frame": 2402,
+          "end_frame": 2422,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2422,
+          "end_frame": 2438,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "next",
+          "start_frame": 2438,
+          "end_frame": 2452,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decade",
+          "start_frame": 2452,
+          "end_frame": 2473,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2473,
+          "end_frame": 2488,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "global",
+          "start_frame": 2488,
+          "end_frame": 2506,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "politics.",
+          "start_frame": 2506,
+          "end_frame": 2540,
+          "is_highlight": true,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_06_outro",
+      "act_type": "OUTRO",
+      "start_frame": 13975,
+      "duration_frames": 2284,
+      "duration_seconds": 38.067,
+      "title": "Legacy & Takeaways: What It All Means",
+      "narrative": "Today, the echoes of The Secret Operation that Built India's Nuclear Defense in 1974 still resonate. The impact of these events is still felt today. The lessons learned shape how we think about nuclear history. The events that unfolded were not just a story from the past - they are a blueprint for understanding the present. The decisions made in those critical moments continue to influence policy and shape international relations. We can see the fingerprints of this operation today. History remembers, but the full story remains untold. The legacy lives on.",
+      "visual_tags": [
+        "modern day",
+        "memorial",
+        "reflection"
+      ],
+      "search_queries": [
+        "modern memorial",
+        "contemporary reflection"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566229.png",
+        "fallback_prompt": "Modern memorial site, contemporary reflection, people contemplating, soft natural lighting",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2284,
+        "overlay_spec": {
+          "type": "MAP",
+          "data": {
+            "coordinates": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "zoom_level": 2
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_06_outro_voiceover.wav",
+        "duration_seconds": 38.4,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 92,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "Today,",
+          "start_frame": 0,
+          "end_frame": 36,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 62,
+          "end_frame": 76,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "echoes",
+          "start_frame": 76,
+          "end_frame": 93,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 93,
+          "end_frame": 105,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 105,
+          "end_frame": 117,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 117,
+          "end_frame": 129,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 129,
+          "end_frame": 165,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 165,
+          "end_frame": 186,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 186,
+          "end_frame": 204,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 204,
+          "end_frame": 236,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 236,
+          "end_frame": 249,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 249,
+          "end_frame": 280,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 280,
+          "end_frame": 350,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974",
+          "start_frame": 350,
+          "end_frame": 352,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "still",
+          "start_frame": 352,
+          "end_frame": 386,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "resonate.",
+          "start_frame": 386,
+          "end_frame": 416,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 478,
+          "end_frame": 490,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "impact",
+          "start_frame": 490,
+          "end_frame": 513,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 513,
+          "end_frame": 525,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "these",
+          "start_frame": 525,
+          "end_frame": 535,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "events",
+          "start_frame": 535,
+          "end_frame": 554,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "is",
+          "start_frame": 554,
+          "end_frame": 571,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "still",
+          "start_frame": 571,
+          "end_frame": 584,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "felt",
+          "start_frame": 584,
+          "end_frame": 596,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "today.",
+          "start_frame": 596,
+          "end_frame": 632,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 679,
+          "end_frame": 691,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "lessons",
+          "start_frame": 691,
+          "end_frame": 712,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "learned",
+          "start_frame": 712,
+          "end_frame": 738,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "shape",
+          "start_frame": 738,
+          "end_frame": 756,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "how",
+          "start_frame": 756,
+          "end_frame": 768,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 768,
+          "end_frame": 777,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "think",
+          "start_frame": 777,
+          "end_frame": 793,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "about",
+          "start_frame": 793,
+          "end_frame": 808,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 808,
+          "end_frame": 829,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "history.",
+          "start_frame": 829,
+          "end_frame": 872,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 922,
+          "end_frame": 932,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "events",
+          "start_frame": 932,
+          "end_frame": 952,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 952,
+          "end_frame": 968,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "unfolded",
+          "start_frame": 968,
+          "end_frame": 1000,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 1000,
+          "end_frame": 1010,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "not",
+          "start_frame": 1010,
+          "end_frame": 1024,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "just",
+          "start_frame": 1024,
+          "end_frame": 1041,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1041,
+          "end_frame": 1050,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "story",
+          "start_frame": 1050,
+          "end_frame": 1066,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "from",
+          "start_frame": 1066,
+          "end_frame": 1080,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1080,
+          "end_frame": 1093,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "past,",
+          "start_frame": 1093,
+          "end_frame": 1111,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "they",
+          "start_frame": 1119,
+          "end_frame": 1125,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "are",
+          "start_frame": 1125,
+          "end_frame": 1137,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1137,
+          "end_frame": 1150,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "blueprint",
+          "start_frame": 1150,
+          "end_frame": 1159,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "for",
+          "start_frame": 1159,
+          "end_frame": 1185,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "understanding",
+          "start_frame": 1185,
+          "end_frame": 1214,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1214,
+          "end_frame": 1233,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "present.",
+          "start_frame": 1233,
+          "end_frame": 1257,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 1316,
+          "end_frame": 1326,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decisions",
+          "start_frame": 1326,
+          "end_frame": 1353,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "made",
+          "start_frame": 1353,
+          "end_frame": 1377,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 1377,
+          "end_frame": 1384,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "those",
+          "start_frame": 1384,
+          "end_frame": 1394,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "critical",
+          "start_frame": 1394,
+          "end_frame": 1417,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "moments",
+          "start_frame": 1417,
+          "end_frame": 1446,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "continue",
+          "start_frame": 1446,
+          "end_frame": 1474,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1474,
+          "end_frame": 1494,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "influence",
+          "start_frame": 1494,
+          "end_frame": 1514,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "policy",
+          "start_frame": 1514,
+          "end_frame": 1545,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1545,
+          "end_frame": 1564,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "shape",
+          "start_frame": 1564,
+          "end_frame": 1585,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "international",
+          "start_frame": 1585,
+          "end_frame": 1617,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "relations.",
+          "start_frame": 1617,
+          "end_frame": 1658,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "We",
+          "start_frame": 1706,
+          "end_frame": 1728,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "can",
+          "start_frame": 1728,
+          "end_frame": 1744,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "see",
+          "start_frame": 1744,
+          "end_frame": 1756,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1756,
+          "end_frame": 1767,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "fingerprints",
+          "start_frame": 1767,
+          "end_frame": 1790,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 1790,
+          "end_frame": 1807,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "this",
+          "start_frame": 1807,
+          "end_frame": 1821,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 1821,
+          "end_frame": 1843,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "today.",
+          "start_frame": 1843,
+          "end_frame": 1890,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "History",
+          "start_frame": 1942,
+          "end_frame": 1956,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "remembers,",
+          "start_frame": 1956,
+          "end_frame": 1980,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "but",
+          "start_frame": 2010,
+          "end_frame": 2017,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2017,
+          "end_frame": 2027,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "full",
+          "start_frame": 2027,
+          "end_frame": 2042,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "story",
+          "start_frame": 2042,
+          "end_frame": 2061,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "remains",
+          "start_frame": 2061,
+          "end_frame": 2084,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "untold.",
+          "start_frame": 2084,
+          "end_frame": 2122,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 2178,
+          "end_frame": 2190,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "legacy",
+          "start_frame": 2190,
+          "end_frame": 2210,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "lives",
+          "start_frame": 2210,
+          "end_frame": 2232,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "on.",
+          "start_frame": 2232,
+          "end_frame": 2256,
+          "is_highlight": false,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_07_outro",
+      "act_type": "OUTRO",
+      "start_frame": 16259,
+      "duration_frames": 2700,
+      "duration_seconds": 45.0,
+      "title": "What We Learned",
+      "narrative": "So what can we take away from The Secret Operation that Built India's Nuclear Defense in 1974? The key lessons are threefold. Understanding these events helps us navigate the present. First, we learn that the most important stories are often the ones that never make the headlines. Second, the actions of a few individuals can have consequences that span generations. And third, the line between necessary secrecy and dangerous concealment must be carefully navigated. As we look to the future, these lessons remain as relevant as they were decades ago. The story of The Secret Operation that Built India's Nuclear Defense in 1974 is ultimately about human nature - ambition, fear, courage, and the choices we make. It reminds us that history is not just written by the victors, but by those who dare to act. And it reminds us that the truth has a way of emerging.",
+      "visual_tags": [
+        "summary",
+        "infographic",
+        "takeaway"
+      ],
+      "search_queries": [
+        "documentary infographic",
+        "takeaway analysis"
+      ],
+      "visual_asset": {
+        "source_type": "AI_GENERATED",
+        "asset_uri": "workspace/assets/ai_generated/placeholder_1789566230.png",
+        "fallback_prompt": "Documentary infographic, summary graphics, clean typography, dark cinematic background, professional style",
+        "motion_preset": "PARALLAX_DRIFT",
+        "width": 1920,
+        "height": 1080,
+        "duration_frames": 2700,
+        "overlay_spec": {
+          "type": "STAT_COUNTER",
+          "data": {
+            "label": "Key figure mentioned in topic: 1974",
+            "start_value": 0,
+            "end_value": 1974,
+            "unit": ""
+          }
+        },
+        "license_info": "",
+        "attribution": "",
+        "match_score": 0.0
+      },
+      "voiceover": {
+        "audio_path": "workspace/assets/audio/scene_07_outro_voiceover.wav",
+        "duration_seconds": 58.056,
+        "sample_rate": 24000,
+        "voice_id": "default",
+        "word_count": 148,
+        "speaker_wpm": 145.0
+      },
+      "captions": [
+        {
+          "word": "So",
+          "start_frame": 0,
+          "end_frame": 27,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "what",
+          "start_frame": 27,
+          "end_frame": 38,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "can",
+          "start_frame": 38,
+          "end_frame": 48,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 48,
+          "end_frame": 57,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "take",
+          "start_frame": 57,
+          "end_frame": 73,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "away",
+          "start_frame": 73,
+          "end_frame": 86,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "from",
+          "start_frame": 86,
+          "end_frame": 98,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 98,
+          "end_frame": 111,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 111,
+          "end_frame": 123,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 123,
+          "end_frame": 158,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 158,
+          "end_frame": 180,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 180,
+          "end_frame": 194,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 194,
+          "end_frame": 228,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 228,
+          "end_frame": 242,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 242,
+          "end_frame": 272,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 272,
+          "end_frame": 358,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974?",
+          "start_frame": 358,
+          "end_frame": 358,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 418,
+          "end_frame": 424,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "key",
+          "start_frame": 424,
+          "end_frame": 439,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "lessons",
+          "start_frame": 439,
+          "end_frame": 458,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "are",
+          "start_frame": 458,
+          "end_frame": 472,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "threefold.",
+          "start_frame": 472,
+          "end_frame": 512,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Understanding",
+          "start_frame": 573,
+          "end_frame": 601,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "these",
+          "start_frame": 601,
+          "end_frame": 624,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "events",
+          "start_frame": 624,
+          "end_frame": 644,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "helps",
+          "start_frame": 644,
+          "end_frame": 661,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "us",
+          "start_frame": 661,
+          "end_frame": 680,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "navigate",
+          "start_frame": 680,
+          "end_frame": 699,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 699,
+          "end_frame": 717,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "present.",
+          "start_frame": 717,
+          "end_frame": 740,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "First,",
+          "start_frame": 805,
+          "end_frame": 826,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 846,
+          "end_frame": 858,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "learn",
+          "start_frame": 858,
+          "end_frame": 871,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 871,
+          "end_frame": 880,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 880,
+          "end_frame": 891,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "most",
+          "start_frame": 891,
+          "end_frame": 903,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "important",
+          "start_frame": 903,
+          "end_frame": 930,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "stories",
+          "start_frame": 930,
+          "end_frame": 955,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "are",
+          "start_frame": 955,
+          "end_frame": 974,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "often",
+          "start_frame": 974,
+          "end_frame": 993,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 993,
+          "end_frame": 1006,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "ones",
+          "start_frame": 1006,
+          "end_frame": 1018,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 1018,
+          "end_frame": 1033,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "never",
+          "start_frame": 1033,
+          "end_frame": 1048,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "make",
+          "start_frame": 1048,
+          "end_frame": 1062,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1062,
+          "end_frame": 1074,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "headlines.",
+          "start_frame": 1074,
+          "end_frame": 1102,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "Second,",
+          "start_frame": 1176,
+          "end_frame": 1192,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1208,
+          "end_frame": 1226,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "actions",
+          "start_frame": 1226,
+          "end_frame": 1243,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 1243,
+          "end_frame": 1257,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 1257,
+          "end_frame": 1263,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "few",
+          "start_frame": 1263,
+          "end_frame": 1273,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "individuals",
+          "start_frame": 1273,
+          "end_frame": 1304,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "can",
+          "start_frame": 1304,
+          "end_frame": 1327,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "have",
+          "start_frame": 1327,
+          "end_frame": 1341,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "consequences",
+          "start_frame": 1341,
+          "end_frame": 1374,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 1374,
+          "end_frame": 1402,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "span",
+          "start_frame": 1402,
+          "end_frame": 1419,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "generations.",
+          "start_frame": 1419,
+          "end_frame": 1454,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "And",
+          "start_frame": 1500,
+          "end_frame": 1538,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "third,",
+          "start_frame": 1538,
+          "end_frame": 1567,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1580,
+          "end_frame": 1592,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "line",
+          "start_frame": 1592,
+          "end_frame": 1604,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "between",
+          "start_frame": 1604,
+          "end_frame": 1624,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "necessary",
+          "start_frame": 1624,
+          "end_frame": 1656,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "secrecy",
+          "start_frame": 1656,
+          "end_frame": 1699,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 1699,
+          "end_frame": 1711,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "dangerous",
+          "start_frame": 1711,
+          "end_frame": 1732,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "concealment",
+          "start_frame": 1732,
+          "end_frame": 1777,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "must",
+          "start_frame": 1777,
+          "end_frame": 1794,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "be",
+          "start_frame": 1794,
+          "end_frame": 1807,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "carefully",
+          "start_frame": 1807,
+          "end_frame": 1828,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "navigated.",
+          "start_frame": 1828,
+          "end_frame": 1869,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "As",
+          "start_frame": 1927,
+          "end_frame": 1939,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 1939,
+          "end_frame": 1950,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "look",
+          "start_frame": 1950,
+          "end_frame": 1958,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 1958,
+          "end_frame": 1969,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 1969,
+          "end_frame": 1976,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "future,",
+          "start_frame": 1976,
+          "end_frame": 2001,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "these",
+          "start_frame": 2025,
+          "end_frame": 2035,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "lessons",
+          "start_frame": 2035,
+          "end_frame": 2056,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "remain",
+          "start_frame": 2056,
+          "end_frame": 2080,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "as",
+          "start_frame": 2080,
+          "end_frame": 2097,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "relevant",
+          "start_frame": 2097,
+          "end_frame": 2115,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "as",
+          "start_frame": 2115,
+          "end_frame": 2134,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "they",
+          "start_frame": 2134,
+          "end_frame": 2139,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "were",
+          "start_frame": 2139,
+          "end_frame": 2150,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "decades",
+          "start_frame": 2150,
+          "end_frame": 2172,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "ago.",
+          "start_frame": 2172,
+          "end_frame": 2206,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "The",
+          "start_frame": 2256,
+          "end_frame": 2270,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "story",
+          "start_frame": 2270,
+          "end_frame": 2286,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 2286,
+          "end_frame": 2296,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2296,
+          "end_frame": 2308,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "secret",
+          "start_frame": 2308,
+          "end_frame": 2320,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "operation",
+          "start_frame": 2320,
+          "end_frame": 2354,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 2354,
+          "end_frame": 2376,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "built",
+          "start_frame": 2376,
+          "end_frame": 2391,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "India's",
+          "start_frame": 2391,
+          "end_frame": 2424,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "nuclear",
+          "start_frame": 2424,
+          "end_frame": 2438,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "defense",
+          "start_frame": 2438,
+          "end_frame": 2467,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "in",
+          "start_frame": 2467,
+          "end_frame": 2488,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "1974",
+          "start_frame": 2488,
+          "end_frame": 2533,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "is",
+          "start_frame": 2533,
+          "end_frame": 2572,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "ultimately",
+          "start_frame": 2572,
+          "end_frame": 2595,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "about",
+          "start_frame": 2595,
+          "end_frame": 2620,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "human",
+          "start_frame": 2620,
+          "end_frame": 2637,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "nature,",
+          "start_frame": 2637,
+          "end_frame": 2662,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "ambition,",
+          "start_frame": 2678,
+          "end_frame": 2692,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "fear,",
+          "start_frame": 2726,
+          "end_frame": 2740,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "courage,",
+          "start_frame": 2760,
+          "end_frame": 2780,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "and",
+          "start_frame": 2798,
+          "end_frame": 2803,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 2803,
+          "end_frame": 2812,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "choices",
+          "start_frame": 2812,
+          "end_frame": 2829,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "we",
+          "start_frame": 2829,
+          "end_frame": 2845,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "make.",
+          "start_frame": 2845,
+          "end_frame": 2869,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "It",
+          "start_frame": 2907,
+          "end_frame": 2936,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "reminds",
+          "start_frame": 2936,
+          "end_frame": 2953,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "us",
+          "start_frame": 2953,
+          "end_frame": 2973,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 2973,
+          "end_frame": 2986,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "history",
+          "start_frame": 2986,
+          "end_frame": 3003,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "is",
+          "start_frame": 3003,
+          "end_frame": 3020,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "not",
+          "start_frame": 3020,
+          "end_frame": 3032,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "just",
+          "start_frame": 3032,
+          "end_frame": 3049,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "written",
+          "start_frame": 3049,
+          "end_frame": 3062,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "by",
+          "start_frame": 3062,
+          "end_frame": 3075,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 3075,
+          "end_frame": 3082,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "victors,",
+          "start_frame": 3082,
+          "end_frame": 3110,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "but",
+          "start_frame": 3132,
+          "end_frame": 3135,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "by",
+          "start_frame": 3135,
+          "end_frame": 3150,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "those",
+          "start_frame": 3150,
+          "end_frame": 3165,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "who",
+          "start_frame": 3165,
+          "end_frame": 3175,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "dare",
+          "start_frame": 3175,
+          "end_frame": 3184,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "to",
+          "start_frame": 3184,
+          "end_frame": 3198,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "act.",
+          "start_frame": 3198,
+          "end_frame": 3226,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "And",
+          "start_frame": 3278,
+          "end_frame": 3288,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "it",
+          "start_frame": 3288,
+          "end_frame": 3295,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "reminds",
+          "start_frame": 3295,
+          "end_frame": 3310,
+          "is_highlight": true,
+          "confidence": 1.0
+        },
+        {
+          "word": "us",
+          "start_frame": 3310,
+          "end_frame": 3331,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "that",
+          "start_frame": 3331,
+          "end_frame": 3340,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "the",
+          "start_frame": 3340,
+          "end_frame": 3350,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "truth",
+          "start_frame": 3350,
+          "end_frame": 3364,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "has",
+          "start_frame": 3364,
+          "end_frame": 3380,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "a",
+          "start_frame": 3380,
+          "end_frame": 3387,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "way",
+          "start_frame": 3387,
+          "end_frame": 3396,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "of",
+          "start_frame": 3396,
+          "end_frame": 3404,
+          "is_highlight": false,
+          "confidence": 1.0
+        },
+        {
+          "word": "emerging.",
+          "start_frame": 3404,
+          "end_frame": 3421,
+          "is_highlight": true,
+          "confidence": 1.0
+        }
+      ]
+    }
+  ],
+  "audio_tracks": [
+    {
+      "track_id": "vo_scene_00_hook",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_00_hook_voiceover.wav",
+      "start_frame": 0,
+      "duration_frames": 2408,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_01_context",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_01_context_voiceover.wav",
+      "start_frame": 2408,
+      "duration_frames": 2383,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_02_conflict",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_02_conflict_voiceover.wav",
+      "start_frame": 4791,
+      "duration_frames": 2383,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_03_conflict",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_03_conflict_voiceover.wav",
+      "start_frame": 7174,
+      "duration_frames": 2035,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_04_climax",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_04_climax_voiceover.wav",
+      "start_frame": 9209,
+      "duration_frames": 2160,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_05_climax",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_05_climax_voiceover.wav",
+      "start_frame": 11369,
+      "duration_frames": 2606,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_06_outro",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_06_outro_voiceover.wav",
+      "start_frame": 13975,
+      "duration_frames": 2284,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    },
+    {
+      "track_id": "vo_scene_07_outro",
+      "type": "VOICEOVER",
+      "file_path": "/workspace/assets/audio/scene_07_outro_voiceover.wav",
+      "start_frame": 16259,
+      "duration_frames": 2700,
+      "volume": 1.0,
+      "pan": "mono",
+      "effects": []
+    }
+  ],
+  "sfx_triggers": [
+    {
+      "sfx_id": "sfx_whoosh_scene_00_hook",
+      "frame": 0,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/whoosh.wav"
+    },
+    {
+      "sfx_id": "sfx_hit_scene_01_context",
+      "frame": 2408,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/hit.wav"
+    },
+    {
+      "sfx_id": "sfx_vinyl_crackle_scene_02_conflict",
+      "frame": 4791,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/vinyl_crackle.wav"
+    },
+    {
+      "sfx_id": "sfx_paper_slide_scene_03_conflict",
+      "frame": 7174,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/paper_slide.wav"
+    },
+    {
+      "sfx_id": "sfx_whoosh_scene_04_climax",
+      "frame": 9209,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/whoosh.wav"
+    },
+    {
+      "sfx_id": "sfx_hit_scene_05_climax",
+      "frame": 11369,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/hit.wav"
+    },
+    {
+      "sfx_id": "sfx_vinyl_crackle_scene_06_outro",
+      "frame": 13975,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/vinyl_crackle.wav"
+    },
+    {
+      "sfx_id": "sfx_paper_slide_scene_07_outro",
+      "frame": 16259,
+      "duration_frames": 90,
+      "volume": 0.7,
+      "asset_uri": "/workspace/assets/sfx/paper_slide.wav"
+    }
+  ],
+  "version": "1.0.0"
+}
