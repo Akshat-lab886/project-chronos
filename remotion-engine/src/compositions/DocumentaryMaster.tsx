@@ -56,17 +56,25 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
   const { width, height, fps } = useVideoConfig();
   const scenes = useMemo(() => scenesWithTiming(manifest), [manifest]);
 
-  // Resolve the static file path for an asset
-  // Use Remotion's staticFile() which registers files from the public dir
-  // For file:// URLs, return them directly (they shouldn't be passed through staticFile)
+  // Resolve the static file path for an asset.
+  // Assets are copied to remotion-engine/public/workspace/assets/ by the backend.
+  // staticFile() resolves against the public dir, so "workspace/assets/foo.png"
+  // maps to /workspace/assets/foo.png which serves from public/workspace/assets/foo.png
   const resolveAssetPath = (uri: string): string => {
     if (!uri) return "";
-    // HTTP URLs, absolute paths, and file:// URLs are returned as-is
-    if (uri.startsWith("/") || uri.startsWith("http://") || uri.startsWith("https://") || uri.startsWith("file://")) {
+    // HTTP URLs and file:// URLs are returned as-is
+    if (uri.startsWith("http://") || uri.startsWith("https://") || uri.startsWith("file://")) {
       return uri;
     }
-    // For relative paths, use staticFile (registered from public dir)
-    return staticFile(uri);
+    // Normalize: strip leading slash if present, keep "workspace/" prefix
+    // since assets are copied to public/workspace/
+    let cleanPath = uri;
+    // Remove leading slash from absolute-style paths
+    if (cleanPath.startsWith("/")) {
+      cleanPath = cleanPath.substring(1);
+    }
+    // Keep the full path as-is for staticFile() resolution
+    return staticFile(cleanPath);
   };
 
   return (
@@ -181,7 +189,7 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
           durationInFrames={scene.duration_frames}
         >
           <Audio
-            src={scene.voiceover.audio_path.startsWith("file://") ? scene.voiceover.audio_path : staticFile(scene.voiceover.audio_path)}
+            src={resolveAssetPath(scene.voiceover.audio_path)}
             volume={1.0}
           />
         </Sequence>

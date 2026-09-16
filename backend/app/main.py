@@ -279,10 +279,29 @@ def _run_audio_master_and_assemble(video_path, manifest, manifest_path, output_p
             for s in manifest.scenes if s.voiceover
         ]
 
+        # Build BGM tracks: cinematic ambient bed at low volume with sidechain ducking
+        bgm_path = "workspace/assets/audio/cinematic_ambient_bgm.wav"
+        bgm_specs = []
+        if os.path.exists(bgm_path):
+            total_frames = manifest.metadata.total_frames
+            bgm_specs = [
+                AudioTrackSpec(
+                    track_id="bgm_cinematic_ambient",
+                    type=AudioTrackType.BGM,
+                    file_path=bgm_path,
+                    start_frame=0,
+                    duration_frames=total_frames,
+                    volume=0.25,  # Low-volume ambient bed
+                )
+            ]
+            logger.info(f"  Found cinematic BGM: {bgm_path} ({len(bgm_specs)} track)")
+        else:
+            logger.warning("  No BGM file found — rendering voiceover-only audio")
+
         master = SoundMaster()
         audio_result = master.master_audio(
             voiceover_tracks=voice_specs,
-            bgm_tracks=[],
+            bgm_tracks=bgm_specs,
             sfx_tracks=[],
             sfx_triggers=manifest.sfx_triggers,
             output_path=str(Path(output_path).parent / "mastered_audio.mp4"),
@@ -327,9 +346,24 @@ def _run_audio_master_and_assemble(video_path, manifest, manifest_path, output_p
         ]
 
         master = SoundMaster()
+        # Include BGM if available
+        bgm_path = "workspace/assets/audio/cinematic_ambient_bgm.wav"
+        bgm_specs = []
+        if os.path.exists(bgm_path):
+            bgm_specs = [
+                AudioTrackSpec(
+                    track_id="bgm_cinematic_ambient",
+                    type=AudioTrackType.BGM,
+                    file_path=bgm_path,
+                    start_frame=0,
+                    duration_frames=manifest.metadata.total_frames,
+                    volume=0.25,
+                )
+            ]
+
         audio_result = master.master_audio(
             voiceover_tracks=voice_specs,
-            bgm_tracks=[],
+            bgm_tracks=bgm_specs,
             sfx_tracks=[],
             sfx_triggers=manifest.sfx_triggers,
             output_path=final_path.replace(".mp4", "_audio.mp4"),

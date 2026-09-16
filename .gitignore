@@ -68,3 +68,6 @@ logs/
 .coverage
 htmlcov/
 .pytest_cache/
+remotion-engine/pnpm-lock.yaml
+remotion-engine/public/textures/film-grain-loop.gif
+remotion-engine/public/manifest.json

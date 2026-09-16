@@ -150,7 +150,7 @@ class SoundMaster:
                 parts.append(
                     f"{bg_input}[voiceout]"
                     f"sidechaincompress=threshold=0.004:ratio=4:attack=10:release=300"
-                    f":makeup=3:level_in=1:level_out=1[bgducked]"
+                    f":makeup=3[bgducked]"
                 )
             else:
                 parts.append(f"{bg_input}anull[bgducked]")

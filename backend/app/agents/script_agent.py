@@ -61,16 +61,13 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.HOOK,
             title_template="Cold Open: Uncovering the Truth Behind \"{topic}\"",
             narrative_template=(
-                "What if we told you that {hook_statement}? "
-                "This is the story that history books barely mention — a tale of "
-                "{topic_domain} so classified, so deeply buried, that even today "
-                "most experts are only aware fragments of what happened. "
-                "Going back to {earliest_year}, a secret operation was underway that would "
-                "reshape the global balance of power. Hidden from public view, "
-                "scientists and operatives worked in complete secrecy beneath the surface, "
-                "their work carrying implications far beyond what any single nation could grasp. "
-                "In this documentary, we uncover the untold truth behind one of the "
-                "most closely guarded secrets in modern {topic_domain}."
+                "{hook_statement} "
+                "This event went largely unreported in {earliest_year}, hidden behind "
+                "layers of {topic_domain} classification that most experts are still "
+                "unraveling today. The operation involved {key_person}, "
+                "covert facility protocols, and decisions made in secure rooms "
+                "that would reshape the global balance of power. "
+                "Declassified records and insider testimony reveal what really happened."
             ),
             visual_tag_template=["dramatic", "mysterious", "historical", "declassified"],
             search_query_template=["declassified historical footage", "dramatic reveal"],
@@ -85,17 +82,15 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.HOOK,
             title_template="The Paradox: Why This Was Buried",
             narrative_template=(
-                "Why would an entire nation spend billions in secret, only to bury "
-                "the evidence of what they achieved? The answer lies deep in the "
-                "records that were classified for decades. "
-                "What started as a scientific curiosity became a matter of national "
-                "security when the implications became clear. "
-                "The decision was made to seal the files, remove the names, "
-                "and pretend it never happened. "
-                "But fragments remain - scattered across different archives, "
-                "hidden in plain sight in technical reports, "
-                "and whispered about in corridors of power. "
-                "This is the untold story of what really happened."
+                "Classified documents reveal that critical decisions for {topic} "
+                "were made in windowless rooms with soundproof walls. "
+                "The records were sealed, names redacted, and files locked away "
+                "in secure vaults that required multiple authorization codes. "
+                "{person_description} "
+                "Yet fragments survived — technical reports, audit trails, "
+                "and personnel testimonies stored in different archives. "
+                "Each piece tells part of the story that official channels "
+                "worked to suppress."
             ),
             visual_tag_template=["mystery", "secrets", "classified", "documents"],
             search_query_template=["mysterious classified documents", "secret file room"],
@@ -113,16 +108,16 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             title_template="Setting the Stage: Origins & Background",
             narrative_template=(
                 "To understand {topic}, we must go back to {earliest_year}. "
-                "The foundations were laid when {foundation_event}. "
-                "Key figures like {key_person} shaped the early direction of this operation, "
-                "operating from the shadows with unprecedented access to resources and intelligence. "
-                "This was a time when the world was divided, tensions were high, "
-                "and every major power was racing to develop new strategic capabilities. "
-                "Behind closed doors in secure facilities, decisions were made that would have "
-                "far-reaching consequences for decades to come. "
-                "Through declassified documents, insider testimonies, and historical records, "
-                "we trace the origins of this remarkable story — a tale of {topic_domain} "
-                "that reads like a thriller but shaped the real world."
+                "{foundation_event}. "
+                "Personnel files show that {key_person} were directly involved "
+                "in early planning sessions held in secure conference rooms. "
+                "The global situation at the time was tense — "
+                "nations competing for strategic advantage, "
+                "intelligence agencies monitoring every move. "
+                "Decisions made that year would have consequences "
+                "for decades to come. Through declassified documents, "
+                "we trace the origins of this {topic_domain} operation "
+                "that shaped the modern world."
             ),
             visual_tag_template=["historical map", "archive footage", "timeline"],
             search_query_template=["historical map animation", "archive footage"],
@@ -137,15 +132,17 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.CONTEXT,
             title_template="The Players: Key Figures & Organizations",
             narrative_template=(
-                "The people behind {topic} operated in shadows. "
-                "{person_description}. "
-                "Their motivations were complex and often contradictory. "
-                "Some were driven by ideology, others by ambition. "
-                "These individuals moved through the corridors of power, "
-                "influencing decisions from behind the scenes. "
-                "They had access to resources beyond what most people could "
-                "imagine. Every player had their own agenda, and the "
-                "intersections of their interests created a web of alliances."
+                "Personnel records show that {key_person} "
+                "operated with extraordinary secrecy. "
+                "{person_description} "
+                "Their motivations were complex — national security, "
+                "scientific curiosity, and strategic advantage all played a role. "
+                "Each operated within a compartmentalized structure "
+                "where information flow was strictly controlled. "
+                "Communication logs reveal the meticulous planning "
+                "that went into every phase of {topic}. "
+                "The intersection of their interests created a web of alliances "
+                "and rivalries that shaped everything that followed."
             ),
             visual_tag_template=["portrait", "mugshot", "personnel file"],
             search_query_template=["historical portraits", "personnel files"],
@@ -162,17 +159,19 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.CONFLICT,
             title_template="The Rising Tension: Escalating Challenges",
             narrative_template=(
-                "As {topic} progressed, tensions mounted in ways that few anticipated. "
-                "The situation became increasingly precarious when {conflict_event}. "
-                "This marked a critical turning point where internal and external "
-                "pressures began to collide. What had started as a carefully "
-                "orchestrated operation began to show cracks in its foundation. "
-                "Communication intercepts raised alarms, security protocols were "
-                "being questioned, and doubts crept in. There were whispers of "
-                "betrayal, concerns about compromised assets, and growing fears "
-                "that the entire operation might be exposed. {stakes_description} "
-                "Yet the project pressed on, driven by unwavering determination "
-                "and the weight of sunk costs. The margin for error had shrunk to zero."
+                "As {topic} progressed, complications emerged. "
+                "The situation became precarious when {conflict_event}. "
+                "Internal and external pressures began to collide. "
+                "What had started as a tightly controlled operation "
+                "began to show vulnerabilities. "
+                "Communication intercepts raised alarms, "
+                "security protocols were questioned, and doubts crept in. "
+                "Whispers of betrayal, compromised assets, "
+                "and growing fears that exposure was imminent. "
+                "{stakes_description}. "
+                "Despite mounting pressure, the project pressed on, "
+                "driven by sunk costs and strategic necessity. "
+                "The margin for error had shrunk to zero."
             ),
             visual_tag_template=["tension", "conflict", "war room"],
             search_query_template=["war room maps", "tense meetings"],
@@ -187,16 +186,17 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.CONFLICT,
             title_template="Stakes & Consequences",
             narrative_template=(
-                "The stakes were higher than anyone realized. {stakes_description}. "
-                "Every decision had cascading effects. The window was closing fast. "
-                "The implications extended far beyond "
-                "the immediate circle of operatives. "
-                "If the operation were exposed, the fallout would be "
-                "devastating - diplomatic crises, economic collapse. "
-                "External observers were beginning to notice unusual activity. "
-                "Alarms were being raised, investigations launched. "
-                "Time was running out, and the margin for error had "
-                "effectively shrunk to zero. Every second counted."
+                "The stakes were existential. {stakes_description}. "
+                "Every decision carried cascading consequences. "
+                "The window for action was closing rapidly. "
+                "The implications extended beyond "
+                "the immediate operational circle. "
+                "If the mission were compromised, "
+                "the fallout would trigger diplomatic and economic collapse. "
+                "External observers detected unusual activity. "
+                "Alarms sounded, investigations launched. "
+                "Time was running out, and the margin for error "
+                "had effectively shrunk to zero. Every second counted."
             ),
             visual_tag_template=["close up", "urgent", "clock"],
             search_query_template=["ticking clock", "urgent documents"],
@@ -213,16 +213,17 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.CLIMAX,
             title_template="The Climax: Critical Revelations",
             narrative_template=(
-                "This is where everything changed. Everything led to this moment — "
-                "{climax_event}. The outcome reshaped not just {topic_domain}, "
-                "but geopolitics itself. What had been building for months all came to a head "
-                "in a single, defining moment that would echo through decades. "
-                "The consequences rippled outward, affecting not just the immediate "
-                "participants but entire populations and nations. "
-                "Secrets were finally revealed, alliances were forged and broken, "
+                "Everything led to this moment. {climax_event}. "
+                "The outcome reshaped {topic_domain} and shifted geopolitics. "
+                "Months of planning culminated in a single, defining instant "
+                "that would echo through decades. "
+                "The consequences rippled outward, affecting "
+                "populations and nations far beyond the immediate operation. "
+                "Intelligence agencies confirmed the results, "
+                "diplomatic cables reflected the shock, "
                 "and the geopolitical landscape shifted irrevocably. "
-                "In the aftermath, those involved would have to live with the "
-                "weight of what they had done. "
+                "In the aftermath, those involved faced "
+                "the weight of what they had done. "
                 "The world would never look at {topic_domain} the same way again."
             ),
             visual_tag_template=["explosion", "revelation", "climax"],
@@ -238,18 +239,19 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.CLIMAX,
             title_template="The Aftermath: Consequences Unfold",
             narrative_template=(
-                "The dust had barely settled when the full extent of what had "
-                "transpired began to sink in. International observers were scrambling "
-                "to understand the implications of this singular event. "
-                "Diplomatic channels were abuzz with urgent communications, "
-                "and emergency sessions were convened at the highest levels. "
-                "The political ramifications were immediate and far-reaching. "
-                "Allied nations were caught off guard, adversaries saw opportunity, "
-                "and neutral parties found themselves forced to take sides. "
-                "In the months that followed, the landscape of international "
-                "relations would be permanently altered. "
-                "This was not just an event - it was a turning point that "
-                "would define the next decade of global politics."
+                "In the immediate aftermath, the scope of what transpired "
+                "became clear. Intelligence briefings circulated among "
+                "international observers, and diplomatic cables reflected "
+                "widespread uncertainty. "
+                "Emergency sessions were convened at the highest levels. "
+                "The geopolitical ramifications were immediate and far-reaching. "
+                "Allied nations scrambled to reassess their positions, "
+                "adversaries saw strategic opportunities, "
+                "and neutral parties found themselves forced to align. "
+                "The landscape of international {topic_domain} "
+                "was permanently altered. "
+                "This was not just a moment — it was a turning point "
+                "that would define the next decade of global politics."
             ),
             visual_tag_template=["aftermath", "consequences", "diplomatic", "crisis"],
             search_query_template=["diplomatic crisis meeting", "emergency session"],
@@ -266,15 +268,16 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.OUTRO,
             title_template="Legacy & Takeaways: What It All Means",
             narrative_template=(
-                "Today, the echoes of {topic} still resonate. {legacy_description} "
-                "The lessons learned shape how we think about {topic_domain}. "
-                "The events that unfolded were not just a story from the past - "
-                "they are a blueprint for understanding the present. "
-                "The decisions made in those critical moments continue to "
-                "influence policy and shape international relations. "
-                "We can see the fingerprints of this operation today. "
-                "History remembers, but the full story remains untold. "
-                "The legacy lives on."
+                "{legacy_description} "
+                "These developments continue to shape {topic_domain} policy. "
+                "The decisions made in those critical moments "
+                "still influence international relations today. "
+                "We see the fingerprints of this operation "
+                "in current strategic doctrines and treaty frameworks. "
+                "While official records provide one account, "
+                "classified archives contain a fuller picture "
+                "that scholars are only now beginning to piece together. "
+                "The legacy persists."
             ),
             visual_tag_template=["modern day", "memorial", "reflection"],
             search_query_template=["modern memorial", "contemporary reflection"],
@@ -289,17 +292,16 @@ ACT_SCENE_TEMPLATES: dict[ActType, list[SceneTemplate]] = {
             act_type=ActType.OUTRO,
             title_template="What We Learned",
             narrative_template=(
-                "So what can we take away from {topic}? Three key lessons emerge. "
-                "Understanding these events helps us navigate the present and future. "
+                "Three lasting lessons emerge from {topic}. "
                 "First, {lesson_one}. "
                 "Second, {lesson_two}. "
                 "And third, {lesson_three}. "
-                "As we look to the future, these lessons remain as relevant as ever. "
-                "The story of {topic} in {topic_domain} is ultimately a story "
-                "about human nature — ambition, fear, courage, and the weight of choices. "
-                "It reminds us that {topic} was not just an isolated event, "
+                "As we look to the future, these lessons remain relevant. "
+                "The story of {topic} is ultimately about "
+                "ambition, strategic calculation, and the weight of choices. "
+                "It was not an isolated event, "
                 "but a turning point whose echoes continue to shape {topic_domain} today. "
-                "The truth has a way of emerging, even from the deepest shadows."
+                "The truth has a way of surfacing."
             ),
             visual_tag_template=["summary", "infographic", "takeaway"],
             search_query_template=["documentary infographic", "takeaway analysis"],
@@ -523,6 +525,9 @@ class ScriptAgent:
         else:
             first_finding_short = first_finding
 
+        # Truncated to ~50 chars for use in key_person slots
+        first_finding_terse = (first_finding[:50].rsplit(' ', 1)[0] + "...") if first_finding and len(first_finding) > 50 else first_finding
+
         # Build topic-specific narrative values from real research data
         # These transform research findings into narrative prose
         hook_statement = (
@@ -535,19 +540,22 @@ class ScriptAgent:
             else f"the emergence of {topic}"
         )
 
-        # Extract key persons from findings — only match findings where 'person'
-        # or a specific title noun (general, minister, director, scientist, officer)
-        # appears NOT as part of "global leaders" type phrase
+        # Extract key persons from findings — match findings about specific personnel
+        # Use stronger keywords that indicate actual people, not generic "leaders"
+        # Exclude findings that are about scientific/engineering descriptions
         person_findings = []
-        strong_person_kw = ["scientist", "general", "minister", "director", "officer", "commander", "physicist", "engineer"]
+        strong_person_kw = ["scientist", "general", "minister", "director", "officer", "commander", "physicist"]
         for fc in finding_contents:
             fl = fc.lower()
-            # Must contain a strong person keyword AND not just "global leaders"
             if any(kw in fl for kw in strong_person_kw) and "global leaders" not in fl:
-                person_findings.append(fc[:80])
-        if not person_findings:
-            person_findings = ["the key architects who operated in complete secrecy"]
-        key_person = person_findings[0] if len(person_findings) == 1 else f"multiple key figures"
+                # Exclude findings that are really about engineering/science, not people
+                if not any(bad in fl for bad in ["engineering", "deterrent", "design", "manufacturing", "component"]):
+                    person_findings.append(fc[:80])
+        if person_findings:
+            key_person = person_findings[0] if len(person_findings) == 1 else f"multiple key figures"
+        else:
+            # Fall back to a narrative-sounding key person reference with research context
+            key_person = "senior officials at the classified facility"
 
         person_description = (
             "These individuals operated with extraordinary secrecy, making decisions "
@@ -607,6 +615,7 @@ class ScriptAgent:
             "stakes_description": stakes_description,
             "climax_date": climax_date,
             "climax_event": climax_event,
+            "climax_year": climax_year,
             "legacy_description": legacy_description,
             "lesson_one": "secrecy shapes history in ways we're only beginning to understand",
             "lesson_two": "small actions by a few individuals can change the trajectory of nations",
