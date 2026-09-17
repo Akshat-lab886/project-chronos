@@ -200,9 +200,12 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
 
       {/* Background Music — always plays with cinematic ambient bed as default */}
       <Audio
-        src={bgmPath ? resolveAssetPath(bgmPath) : staticFile("textures/cinematic_ambient_bgm.mp3")}
+        src={
+          bgmPath
+            ? resolveAssetPath(bgmPath)
+            : staticFile("assets/audio/cinematic_ambient_bgm.mp3")
+        }
         volume={0.25}
-        loop
       />
 
       {/* ─── Post-Processing Layer (applies to entire timeline) ─── */}

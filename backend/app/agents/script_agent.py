@@ -723,14 +723,10 @@ class ScriptAgent:
         # Extract finding content strings for keyword matching
         finding_contents = [f.content for f in research.findings]
         first_finding = finding_contents[0] if finding_contents else ""
-        # Truncate at word boundary for clean hook statement
-        if first_finding and len(first_finding) > 100:
-            first_finding_short = first_finding[:100].rsplit(' ', 1)[0] + "..."
-        else:
-            first_finding_short = first_finding
+        # Use full finding text (do not truncate — prevents mid-sentence cut)
+        first_finding_short = first_finding
 
-        # Truncated to ~50 chars for use in key_person slots
-        first_finding_terse = (first_finding[:50].rsplit(' ', 1)[0] + "...") if first_finding and len(first_finding) > 50 else first_finding
+        first_finding_terse = first_finding[:120] if first_finding and len(first_finding) > 120 else first_finding
 
         # Build topic-specific narrative values from real research data
         # These transform research findings into narrative prose
@@ -740,9 +736,9 @@ class ScriptAgent:
         )
 
         foundation_event = (
-            first_finding[:140] if first_finding
-            else f"the emergence of {topic}"
-        )
+            first_finding[:180].rsplit('.', 1)[0] + "." if first_finding and len(first_finding) > 180
+            else first_finding
+        ) if first_finding else ""
 
         # Extract key persons from findings — match findings about specific personnel
         # Use stronger keywords that indicate actual people, not generic "leaders"

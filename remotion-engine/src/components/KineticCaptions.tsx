@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import React from "react";
+import { interpolate, useCurrentFrame } from "remotion";
 import type { CaptionWord } from "../types/schema";
 
 export interface KineticCaptionsProps {
@@ -18,13 +18,14 @@ export interface KineticCaptionsProps {
 }
 
 /**
- * KineticCaptions — Word-level highlighted typography with centered layout.
+ * KineticCaptions — Word-level highlighted typography.
  *
- * Fixes:
- * - Words rendered with trailing whitespace (space character) to prevent merging
- * - Centered flex-wrap container with gap for consistent horizontal positioning
- * - Rolling window: only renders words active ±15 frames from current frame
- * - No justify-between or unconstrained positioning
+ * Uses pure inline styles (no Tailwind classes) to guarantee rendering
+ * in Remotion's headless Chromium environment where CSS may not be bundled.
+ *
+ * - Words have trailing whitespace to prevent merging
+ * - Centered flex-wrap with gap for consistent horizontal positioning
+ * - Rolling window: only renders words active ±20 frames from current frame
  */
 export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
   captions,
@@ -35,106 +36,109 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
   maxWidth = 80,
 }) => {
   const frame = useCurrentFrame();
-  const { width, height } = useVideoConfig();
+  const currentAbsFrame = startFrame + frame;
 
-  // Only render words active within a rolling window (~4-5 seconds at 60fps)
-  const windowSize = 20; // frames before/after
-  const activeWords = useMemo(() => {
-    return captions.filter((cap) => {
-      const isActive =
-        frame >= cap.start_frame - windowSize &&
-        frame <= cap.end_frame + windowSize;
-      return isActive;
-    });
-  }, [captions, frame, windowSize]);
+  // Filter words within active rolling window
+  const windowSize = 20;
+  const activeWords = captions.filter(
+    (w) => currentAbsFrame >= w.start_frame - windowSize &&
+           currentAbsFrame <= w.end_frame + windowSize
+  );
 
-  // If nothing in window, don't render
   if (activeWords.length === 0) return null;
 
   return (
     <div
       style={{
-        position: "absolute" as const,
+        position: "absolute",
+        bottom: 80,
         left: 0,
-        top: 0,
-        width: "100%",
-        height: "100%",
-        pointerEvents: "none" as const,
+        right: 0,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         zIndex: 50,
+        pointerEvents: "none",
         ...style,
       }}
     >
-      {/* Centered container with backdrop */}
-      <div className="absolute bottom-20 left-0 right-0 flex justify-center pointer-events-none">
-        <div
-          className="flex flex-wrap items-center justify-center gap-2 px-8 py-4 rounded-2xl border shadow-2xl"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.55)",
-            backdropFilter: "blur(6px)",
-            borderColor: "rgba(255, 255, 255, 0.08)",
-            maxWidth: `${width * 0.76}px`,
-          }}
-        >
-          {activeWords.map((token, index) => {
-            const isSpeakingNow =
-              frame >= token.start_frame && frame <= token.end_frame;
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "12px",
+          padding: "12px 28px",
+          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          backdropFilter: "blur(8px)",
+          borderRadius: "16px",
+          border: "1px solid rgba(255, 255, 255, 0.15)",
+          maxWidth: `${maxWidth}%`,
+        }}
+      >
+        {activeWords.map((token, index) => {
+          const isActive =
+            currentAbsFrame >= token.start_frame &&
+            currentAbsFrame <= token.end_frame;
 
-            // Opacity: visible during spoken, fading in/out
-            let opacity = 0.5;
-            if (frame >= token.start_frame - 10 && frame < token.start_frame) {
-              opacity = interpolate(frame, [token.start_frame - 10, token.start_frame], [0, 1]);
-            } else if (isSpeakingNow) {
-              opacity = 1;
-            } else if (frame > token.end_frame && frame <= token.end_frame + 15) {
-              opacity = interpolate(frame, [token.end_frame, token.end_frame + 15], [1, 0]);
+          // Opacity with fade in/out
+          let opacity = 0.5;
+          if (frame >= token.start_frame - 10 && frame < token.start_frame) {
+            opacity = interpolate(frame, [token.start_frame - 10, token.start_frame], [0, 1]);
+          } else if (isActive) {
+            opacity = 1;
+          } else if (frame > token.end_frame && frame <= token.end_frame + 15) {
+            opacity = interpolate(frame, [token.end_frame, token.end_frame + 15], [1, 0]);
+          }
+
+          // Scale spring effect
+          let scale = 1;
+          if (isActive) {
+            const wordProgress = (frame - token.start_frame) / Math.max(1, token.end_frame - token.start_frame);
+            scale = interpolate(wordProgress, [0, 0.3, 1], [1.15, 1.0, 1.0], {
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+            });
+          }
+
+          // Color: gold for highlighted+active, cyan for active, white for inactive
+          let color = "#FFFFFF";
+          let textShadow = "0 2px 4px rgba(0, 0, 0, 0.8)";
+          if (isActive) {
+            if (token.is_highlight) {
+              color = "#FFD700";
+              textShadow = "0 0 10px #FFD700, 0 0 20px rgba(255, 215, 0, 0.8)";
+            } else {
+              color = "#00FFFF";
+              textShadow = "0 0 8px #00FFFF, 0 0 16px rgba(0, 255, 255, 0.7)";
             }
+          } else if (token.is_highlight) {
+            color = "#B8860B";
+            textShadow = "0 0 5px rgba(184, 134, 11, 0.5)";
+          }
 
-            // Scale: spring effect when active
-            let scale = 1;
-            if (isSpeakingNow) {
-              const wordProgress = (frame - token.start_frame) / Math.max(1, token.end_frame - token.start_frame);
-              scale = interpolate(wordProgress, [0, 0.3, 1], [1.15, 1.0, 1.0], {
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              });
-            }
-
-            // Color: gold for highlighted+active, cyan for active non-highlight, white for inactive
-            let color = "#FFFFFF";
-            let textShadow = "0 2px 4px rgba(0, 0, 0, 0.8)";
-            if (isSpeakingNow) {
-              if (token.is_highlight) {
-                color = "#FFD700";
-                textShadow = "0 0 10px #FFD700, 0 0 20px rgba(255, 215, 0, 0.8)";
-              } else {
-                color = "#00FFFF";
-                textShadow = "0 0 8px #00FFFF, 0 0 16px rgba(0, 255, 255, 0.7)";
-              }
-            } else if (token.is_highlight) {
-              color = "#B8860B";
-              textShadow = "0 0 5px rgba(184, 134, 11, 0.5)";
-            }
-
-            return (
-              <span
-                key={`${token.word}_${index}`}
-                style={{
-                  fontSize: `${fontSize}px`,
-                  fontWeight: isSpeakingNow ? 700 : 500,
-                  color,
-                  textShadow,
-                  opacity,
-                  transform: `scale(${scale})`,
-                  transition: "all 0.1s ease-out",
-                  whiteSpace: "nowrap",
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                {token.word}{" "}
-              </span>
-            );
-          })}
-        </div>
+          return (
+            <span
+              key={`${token.word}_${index}`}
+              style={{
+                fontSize: `${fontSize}px`,
+                fontWeight: isActive ? 700 : 500,
+                color,
+                textShadow,
+                opacity,
+                transform: `scale(${scale})`,
+                transition: "all 0.1s ease-out",
+                whiteSpace: "nowrap",
+                textTransform: "uppercase",
+                letterSpacing: "1px",
+                display: "inline-block",
+              }}
+            >
+              {token.word}{" "}
+            </span>
+          );
+        })}
       </div>
     </div>
   );
