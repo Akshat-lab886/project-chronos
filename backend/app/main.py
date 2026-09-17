@@ -397,6 +397,27 @@ def _run_audio_engine(manifest):
     for scene, (vo_spec, captions) in zip(manifest.scenes, results):
         scene.voiceover = vo_spec
         scene.captions = captions
+        # Recalculate scene duration from actual audio duration
+        actual_frames = int(vo_spec.duration_seconds * manifest.metadata.fps)
+        # Clamp to MAX_SCENE_FRAMES to stay within schema constraints
+        from app.agents.script_agent import MAX_SCENE_FRAMES
+        scene.duration_frames = max(180, min(MAX_SCENE_FRAMES, actual_frames))
+
+    # Repair scene continuity after duration updates
+    current = 0
+    for scene in manifest.scenes:
+        scene.start_frame = current
+        current += scene.duration_frames
+
+    # Update total frames
+    if manifest.scenes:
+        last_scene = manifest.scenes[-1]
+        manifest.metadata.total_frames = (
+            last_scene.start_frame + last_scene.duration_frames
+        )
+        manifest.metadata.total_duration_seconds = round(
+            manifest.metadata.total_frames / manifest.metadata.fps, 3
+        )
 
     logger.info(f"Voice synthesis complete: {len(manifest.scenes)} scenes processed")
     return manifest

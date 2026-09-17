@@ -235,10 +235,15 @@ class SceneSpec(BaseModel):
 
     @model_validator(mode="after")
     def validate_captions_within_scene(self) -> "SceneSpec":
-        """Ensure all caption words fall within the scene's frame span."""
+        """Ensure all caption words fall within the scene's absolute frame span."""
+        scene_end = self.start_frame + self.duration_frames
         for cap in self.captions:
-            if cap.end_frame > self.duration_frames:
-                cap.end_frame = self.duration_frames
+            if cap.start_frame < self.start_frame:
+                cap.start_frame = self.start_frame
+            if cap.end_frame > scene_end:
+                cap.end_frame = scene_end
+            if cap.start_frame > cap.end_frame:
+                cap.start_frame = cap.end_frame
         return self
 
 
