@@ -157,9 +157,12 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
               />
             )}
 
-            {/* Graphic Overlays (NEWSPAPER, STAT_COUNTER) */}
-            {visualAsset.overlay_spec.type !== "NONE" &&
-              visualAsset.overlay_spec.type !== "MAP" && (
+            {/* Graphic Overlays (NEWSPAPER, STAT_COUNTER) — only render if real data exists */}
+            {visualAsset.overlay_spec &&
+              visualAsset.overlay_spec.type !== "NONE" &&
+              visualAsset.overlay_spec.type !== "MAP" &&
+              visualAsset.overlay_spec.data &&
+              Object.keys(visualAsset.overlay_spec.data).length > 0 && (
                 <GraphicOverlays
                   overlaySpec={visualAsset.overlay_spec}
                   startFrame={scene.start_frame}
@@ -195,10 +198,12 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
         </Sequence>
       ))}
 
-      {/* Background Music */}
-      {bgmPath && (
-        <Audio src={bgmPath} volume={0.45} />
-      )}
+      {/* Background Music — always plays with cinematic ambient bed as default */}
+      <Audio
+        src={bgmPath ? resolveAssetPath(bgmPath) : staticFile("textures/cinematic_ambient_bgm.mp3")}
+        volume={0.25}
+        loop
+      />
 
       {/* ─── Post-Processing Layer (applies to entire timeline) ─── */}
       <AbsoluteFill

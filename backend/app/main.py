@@ -214,7 +214,7 @@ def _run_remotion_render(manifest, manifest_path, width, height, fps, output_pat
     # Pass the manifest as --props so Root.tsx receives it
     # Use mode="json" to ensure all types are JSON-serializable
     props_json = manifest.model_dump_json()
-    props_json = json.dumps({"manifest": json.loads(props_json)})
+    props_json = json.dumps({"manifest": json.loads(props_json), "bgmPath": "textures/cinematic_ambient_bgm.mp3"})
 
     cmd = [
         "sh", remotion_bin, "render",

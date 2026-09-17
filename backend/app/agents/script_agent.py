@@ -7,6 +7,7 @@ durations calibrated to an average speaking rate of 145 words/minute.
 
 from __future__ import annotations
 
+import json
 import logging
 import re
 from dataclasses import dataclass, field
@@ -16,6 +17,13 @@ from pydantic import BaseModel
 
 from app.agents.research_agent import ResearchAgent, ResearchState
 from app.core.config import get_settings
+
+# Try importing openai for LLM-based generation
+try:
+    import openai
+    _has_openai = True
+except ImportError:
+    _has_openai = False
 from app.core.schemas import (
     ActType,
     AudioTrackSpec,
@@ -330,12 +338,130 @@ class ScriptState:
     errors: list[str] = field(default_factory=list)
 
 
+class LlmScriptEngine:
+    """LLM-based script generation using OpenAI-compatible APIs.
+
+    Falls back to template-based generation when no LLM is configured.
+    Supports OpenAI, DeepSeek, and any OpenAI-compatible endpoint.
+    """
+
+    SYSTEM_PROMPT = """You are an elite investigative documentary director in the style of Gaurav Thakur (GetSetFly) and Vox. You write compelling, cinematic narrative scripts that transform historical topics into engaging 5-act documentaries.
+
+CRITICAL NEGATIVE CONSTRAINTS:
+1. NEVER repeat the user prompt or video title verbatim.
+2. BANNED CLICHES: Do NOT use phrases like "What if we told you", "A tale of...", "Picture this", "Little did they know", "In a world where", "Let's dive in", or "This is the story of".
+3. NO empty exposition: Start each scene In Medias Res with concrete sensory details — specific dates, locations, temperatures, sounds, or technical details.
+4. Every scene must mention at least one concrete noun: a person's name/title, a specific location (e.g., Pokhran, Thar Desert), a codename, or a specific fact from the research data.
+5. Do not use second person ("you") or first person ("I", "we").
+6. Write in third person, present tense for narrative sections.
+
+STRUCTURAL REQUIREMENTS:
+- 5 acts: HOOK (cold open, immediate tension), CONTEXT (background/setup), CONFLICT (rising tension), CLIMAX (peak moment), OUTRO (legacy/lessons)
+- Each scene: 40-120 words
+- Total duration: 300-400 seconds for ~8 scenes
+- Include a clear narrative arc across acts
+
+Return ONLY valid JSON. No commentary, no markdown.
+"""
+
+    def __init__(self):
+        self.settings = get_settings()
+        self.client = None
+        self.model = "gpt-4o-mini"
+
+        if self.settings.llm_provider == "openai" and self.settings.openai_api_key:
+            self.client = openai.OpenAI(api_key=self.settings.openai_api_key)
+            self.model = "gpt-4o-mini"
+        elif self.settings.llm_provider == "deepseek" and self.settings.deepseek_api_key:
+            self.client = openai.OpenAI(
+                api_key=self.settings.deepseek_api_key,
+                base_url="https://api.deepseek.com/v1",
+            )
+            self.model = "deepseek-chat"
+        elif self.settings.llm_provider == "ollama" and self.settings.ollama_base_url:
+            self.client = openai.OpenAI(
+                api_key="ollama",
+                base_url=f"{self.settings.ollama_base_url}/v1",
+            )
+            self.model = "llama3"
+
+    async def generate_scenes(self, topic: str, research: ResearchState, max_scenes: int) -> list[dict]:
+        """Generate scenes using LLM. Returns list of scene dicts."""
+        if not self.client:
+            return []
+
+        # Build research summary string
+        research_data = self._summarize_research(research)
+
+        user_prompt = f"""
+Topic: {topic}
+
+Research Data (use these facts to ground your narrative):
+{research_data}
+
+Generate {max_scenes} scenes as valid JSON array. Each scene object must have:
+- "act_type": one of "HOOK", "CONTEXT", "CONFLICT", "CLIMAX", "OUTRO"
+- "title": a compelling, specific title (not generic)
+- "narrative": 40-120 words of narrative text
+- "search_queries": list of 2-3 search terms for finding relevant stock footage
+- "ai_fallback_prompt": descriptive prompt for AI image generation if stock fails
+- "overlay_type": "NONE", "MAP", "NEWSPAPER", or "STAT_COUNTER"
+- "visual_tags": list of 2-4 descriptive tags
+
+Distribute scenes across acts proportionally (e.g., for 8 scenes: 2 HOOK, 2 CONTEXT, 2 CONFLICT, 1 CLIMAX, 1 OUTRO).
+
+Return ONLY the JSON array. No markdown, no commentary.
+"""
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": self.SYSTEM_PROMPT},
+                    {"role": "user", "content": user_prompt},
+                ],
+                temperature=0.7,
+                response_format={"type": "json_object"},
+                max_tokens=4000,
+            )
+            result = json.loads(response.choices[0].message.content)
+            if isinstance(result, list) and len(result) > 0:
+                logger.info(f"[LlmScriptEngine] Generated {len(result)} scenes via {self.model}")
+                return result
+            elif isinstance(result, dict) and "scenes" in result:
+                logger.info(f"[LlmScriptEngine] Generated {len(result['scenes'])} scenes via {self.model}")
+                return result["scenes"]
+        except Exception as e:
+            logger.warning(f"[LlmScriptEngine] LLM generation failed: {e}")
+
+        return []
+
+    def _summarize_research(self, research: ResearchState) -> str:
+        """Summarize research findings for LLM context."""
+        lines = []
+        lines.append(f"Domain: {research.visual_keywords[:5] if research.visual_keywords else 'general'}")
+        if research.timeline_markers:
+            lines.append("Timeline:")
+            for m in research.timeline_markers:
+                lines.append(f"  - {m.get('year', '?')}: {m.get('event', '')}")
+        if research.findings:
+            lines.append("Findings:")
+            for f in research.findings[:8]:
+                lines.append(f"  - [{f.category}] {f.content}")
+        if research.statistics:
+            lines.append("Statistics:")
+            for s in research.statistics[:4]:
+                lines.append(f"  - {s.get('description', '')}: {s.get('value', '')} {s.get('unit', '')}")
+        return "\n".join(lines)
+
+
 class ScriptAgent:
     """Generates the narrative and storyboard from research findings."""
 
     def __init__(self) -> None:
         self.settings = get_settings()
         self.research_agent = ResearchAgent()
+        self.llm_engine = LlmScriptEngine()
 
     async def generate_manifest(
         self,
@@ -355,7 +481,24 @@ class ScriptAgent:
             topic=topic, project_id=project_id, width=width,
             height=height, fps=fps, research=research,
         )
-        self._generate_scenes(state, max_scenes)
+
+        # Try LLM-based generation first, fall back to templates
+        if self.llm_engine.client:
+            logger.info(f"[ScriptAgent] Using LLM generation ({self.llm_engine.model})")
+            try:
+                llm_scenes = await self.llm_engine.generate_scenes(topic, research, max_scenes)
+                if llm_scenes:
+                    self._generate_scenes_from_llm(state, llm_scenes)
+                    logger.info(f"[ScriptAgent] LLM-generated {len(state.scenes)} scenes")
+                else:
+                    logger.warning("[ScriptAgent] LLM returned no scenes — falling back to templates")
+                    self._generate_scenes(state, max_scenes)
+            except Exception as e:
+                logger.warning(f"[ScriptAgent] LLM generation failed, falling back to templates: {e}")
+                self._generate_scenes(state, max_scenes)
+        else:
+            logger.info("[ScriptAgent] No LLM configured — using template-based generation")
+            self._generate_scenes(state, max_scenes)
 
         # Phase 3: Voiceover specs
         for scene in state.scenes:
@@ -427,6 +570,67 @@ class ScriptAgent:
                 if scene:
                     scenes.append(scene)
                 template_index += 1
+
+        state.scenes = scenes
+
+    def _generate_scenes_from_llm(self, state: ScriptState, llm_scenes: list[dict]) -> None:
+        """Generate scenes from LLM output, merging with research-based fallbacks."""
+        scenes: list[SceneSpec] = []
+
+        for i, llm_scene in enumerate(llm_scenes):
+            narrative = llm_scene.get("narrative", "")
+            word_count = len(narrative.split())
+            estimated_duration = (word_count / WORDS_PER_MINUTE) * 60
+            duration_frames = max(MIN_SCENE_FRAMES, min(MAX_SCENE_FRAMES, int(estimated_duration * state.fps)))
+
+            # Parse act_type from LLM output
+            act_type_str = llm_scene.get("act_type", "CONTEXT")
+            try:
+                act_type = ActType[act_type_str.upper()]
+            except (KeyError, ValueError):
+                act_type = ActType.CONTEXT
+
+            # Parse overlay type
+            overlay_type_str = llm_scene.get("overlay_type", "NONE")
+            try:
+                overlay_type = OverlayType[overlay_type_str.upper()]
+            except (KeyError, ValueError):
+                overlay_type = OverlayType.NONE
+
+            overlay_spec = OverlaySpec(type=overlay_type, data=llm_scene.get("overlay_data", {}))
+
+            visual_asset = VisualAssetSpec(
+                source_type=VisualSourceType.STOCK_VIDEO,
+                asset_uri="",
+                fallback_prompt=llm_scene.get("ai_fallback_prompt", narrative[:120]),
+                motion_preset=MotionPreset.KEN_BURNS_ZOOM_IN,
+                width=state.width,
+                height=state.height,
+                duration_frames=duration_frames,
+                overlay_spec=overlay_spec,
+            )
+
+            scene_id = f"scene_{i:02d}_{act_type.value.lower()}"
+
+            scene = SceneSpec(
+                scene_id=scene_id,
+                act_type=act_type,
+                start_frame=state.current_start_frame,
+                duration_frames=duration_frames,
+                title=llm_scene.get("title", f"Scene {i}"),
+                narrative=narrative,
+                visual_tags=llm_scene.get("visual_tags", []),
+                search_queries=llm_scene.get("search_queries", []),
+                visual_asset=visual_asset,
+                voiceover=VoiceoverSpec(
+                    audio_path=f"/workspace/assets/audio/{scene_id}_voiceover.wav",
+                    duration_seconds=round(duration_frames / state.fps, 3),
+                    word_count=word_count,
+                    speaker_wpm=WORDS_PER_MINUTE,
+                ),
+            )
+            state.current_start_frame += duration_frames
+            scenes.append(scene)
 
         state.scenes = scenes
 
