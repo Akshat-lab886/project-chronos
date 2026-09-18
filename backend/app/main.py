@@ -424,43 +424,49 @@ def _run_audio_engine(manifest):
 
 
 async def _run_asset_harvester(manifest, enable_ai_fallback: bool):
-    """Harvest visual assets for all scenes."""
-    from app.engines.stock_harvester import StockHarvester
+    """Harvest visual assets for all scenes using multi-tiered strategy.
+
+    Tier 1: Wikimedia Commons (authentic historical PD images)
+    Tier 2: Pexels/Pixabay (modern stock B-roll)
+    Tier 3: AI-generated fallback (ComfyUI/PIL)
+    """
+    from app.engines.asset_harvester import AssetHarvester
     from app.engines.comfyui_client import generate_fallback_asset
     from app.core.schemas import VisualSourceType
 
-    harvester = StockHarvester()
-    settings = get_settings()
+    harvester = AssetHarvester(pexels_api_key=get_settings().pexels_api_key)
 
     try:
         for scene in manifest.scenes:
             if not scene.visual_asset.asset_uri:
-                # Harvest stock assets
-                result = await harvester.harvest(
-                    search_queries=scene.search_queries or ["documentary footage"],
+                logger.info(
+                    f"  {scene.scene_id}: searching for assets "
+                    f"(queries={scene.search_queries}, tags={scene.visual_tags})"
+                )
+
+                # Tier 1 + Tier 2: Wikimedia Commons + Pexels
+                result = harvester.harvest_asset_for_scene(
+                    scene_id=scene.scene_id,
+                    search_queries=scene.search_queries or ["historical documentary"],
                     visual_tags=scene.visual_tags or ["historical"],
+                    prefer_video=scene.visual_asset.source_type == VisualSourceType.STOCK_VIDEO,
                     width=scene.visual_asset.width,
                     height=scene.visual_asset.height,
                 )
 
-                if result.primary_asset:
-                    # Download the asset
-                    local_path = await harvester.download_asset(result.primary_asset)
-                    scene.visual_asset.asset_uri = local_path
-                    scene.visual_asset.source_type = result.primary_asset.source_type
-                    scene.visual_asset.match_score = result.primary_asset.match_score
-                    scene.visual_asset.license_info = result.primary_asset.license_info
-                    scene.visual_asset.attribution = result.primary_asset.attribution
-
+                if result:
+                    scene.visual_asset.asset_uri = result["asset_uri"]
+                    scene.visual_asset.source_type = result["source_type"]
+                    scene.visual_asset.match_score = 1.0
                     logger.info(
-                        f"  {scene.scene_id}: stock asset found "
-                        f"(score={result.primary_asset.match_score:.1f})"
+                        f"  {scene.scene_id}: asset found via harvest "
+                        f"(uri={result['asset_uri']})"
                     )
                 elif enable_ai_fallback:
-                    # Fallback to AI generation
-                    logger.info(f"  {scene.scene_id}: no stock found, generating AI fallback")
+                    # Tier 3: AI generation fallback
+                    logger.info(f"  {scene.scene_id}: no remote assets found, generating AI fallback")
                     ai_result = await generate_fallback_asset(
-                        prompt=result.fallback_prompt or f"Documentary footage: {scene.narrative[:200]}",
+                        prompt=scene.visual_asset.fallback_prompt or f"Documentary footage: {scene.narrative[:200]}",
                         width=scene.visual_asset.width,
                         height=scene.visual_asset.height,
                     )
@@ -472,7 +478,7 @@ async def _run_asset_harvester(manifest, enable_ai_fallback: bool):
                     logger.warning(f"  {scene.scene_id}: no assets found and AI fallback disabled")
                     # Keep empty asset_uri — Remotion will use placeholder background
     finally:
-        await harvester.close()
+        harvester.close()
 
     # ── Quality Review ──
     logger.info(f"  Reviewing {len(manifest.scenes)} assets for quality standards...")
@@ -501,23 +507,17 @@ def _review_assets(manifest, harvester):
     for scene in manifest.scenes:
         asset_uri = scene.visual_asset.asset_uri
 
-        if not asset_uri or not _os.path.exists(asset_uri):
+        if not asset_uri:
             review = AssetReview(
                 valid=False,
-                issues=[f"Asset path does not exist: {asset_uri}"],
+                issues=["No asset URI assigned"],
                 score=0.0,
             )
             reviews.append(review)
             continue
 
-        # Gather scene context for relevance scoring
-        scene_context = {
-            "prompt": scene.visual_asset.fallback_prompt or "",
-            "search_queries": scene.search_queries or [],
-            "visual_tags": scene.visual_tags or [],
-        }
-
-        review = harvester.review_asset(asset_uri, scene_context)
+        # Harvester.review_asset expects paths relative to remotion-engine/public/
+        review = harvester.review_asset(asset_uri, scene.scene_id)
         reviews.append(review)
 
         if not review.valid:
