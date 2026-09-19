@@ -6,7 +6,7 @@
  * via the --props CLI argument.
  */
 
-import { Composition } from "remotion";
+import { Composition, CalculateMetadataFunction } from "remotion";
 import React from "react";
 import { DocumentaryMaster } from "./compositions/DocumentaryMaster";
 import type { ProjectChronosManifest } from "./types/schema";
@@ -31,21 +31,32 @@ const FALLBACK_MANIFEST: ProjectChronosManifest = {
   version: "1.0.0",
 } as ProjectChronosManifest;
 
-export const RemotionRoot: React.FC<{ manifest?: ProjectChronosManifest }> = ({ manifest }) => {
-  const effectiveManifest = manifest || FALLBACK_MANIFEST;
+// Calculate metadata dynamically based on the runtime props
+const calculateMetadata: CalculateMetadataFunction<{
+  manifest?: ProjectChronosManifest;
+}> = ({ props }) => {
+  const manifest = props.manifest || FALLBACK_MANIFEST;
+  return {
+    durationInFrames: manifest.metadata.total_frames,
+    fps: manifest.metadata.fps,
+    width: manifest.metadata.width,
+    height: manifest.metadata.height,
+  };
+};
+
+export const RemotionRoot: React.FC<{ manifest?: ProjectChronosManifest }> = () => {
   return (
     <Composition
       id="DocumentaryMaster"
       component={DocumentaryMaster as React.FC<any>}
-      durationInFrames={effectiveManifest.metadata.total_frames}
-      fps={effectiveManifest.metadata.fps}
-      width={effectiveManifest.metadata.width}
-      height={effectiveManifest.metadata.height}
+      durationInFrames={FALLBACK_MANIFEST.metadata.total_frames}
+      fps={FALLBACK_MANIFEST.metadata.fps}
+      width={FALLBACK_MANIFEST.metadata.width}
+      height={FALLBACK_MANIFEST.metadata.height}
       defaultProps={{
-        manifest: effectiveManifest,
+        manifest: FALLBACK_MANIFEST,
       }}
+      calculateMetadata={calculateMetadata}
     />
   );
 };
-
-export { DocumentaryMaster };

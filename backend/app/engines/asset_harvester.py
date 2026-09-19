@@ -27,14 +27,17 @@ from app.core.schemas import (
 logger = logging.getLogger("chronos.assets")
 
 # ── Paths ──
-REMOTION_PUBLIC_DIR = Path("remotion-engine/public/assets")
+# Use absolute path relative to project root (parent of backend/)
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+REMOTION_PUBLIC_DIR = _PROJECT_ROOT / "remotion-engine" / "public" / "assets"
 REMOTION_PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 
 # Wikimedia Commons API endpoint
 WIKIMEDIA_API = "https://commons.wikimedia.org/w/api.php"
 
 # User-Agent header for Wikimedia API requests
-WM_USER_AGENT = "ProjectChronos/1.0 (contact@projectchronos.local)"
+# Wikimedia requires a descriptive UA with contact info
+WM_USER_AGENT = "ProjectChronos/1.0 (https://github.com/Akshat-lab886/project-chronos; chronos@example.com) python-httpx/0.27"
 
 
 class AssetHarvester:
@@ -343,7 +346,7 @@ class AssetHarvester:
         from PIL import Image
         import numpy as np
 
-        full_path = Path("remotion-engine/public") / asset_uri
+        full_path = _PROJECT_ROOT / "remotion-engine" / "public" / asset_uri
 
         issues = []
         score = 1.0

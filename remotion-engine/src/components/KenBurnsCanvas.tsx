@@ -45,7 +45,7 @@ function useMotionParams(
   sceneStartFrame: number
 ) {
   const frame = useCurrentFrame();
-  const relativeFrame = frame - sceneStartFrame;
+  const relativeFrame = frame;  // Inside Sequence, useCurrentFrame() returns local frame (0-based)
 
   const progress = Math.max(0, Math.min(1, relativeFrame / Math.max(1, durationInFrames)));
 
@@ -108,7 +108,7 @@ export const KenBurnsCanvas: React.FC<KenBurnsCanvasProps> = ({
   style,
 }) => {
   const frame = useCurrentFrame();
-  const relativeFrame = frame - sceneStartFrame;
+  const relativeFrame = frame;  // Inside Sequence, useCurrentFrame() returns local frame (0-based)
 
   const { scale, translateX, translateY } = useMotionParams(
     motionPreset,
