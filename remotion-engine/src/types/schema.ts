@@ -99,6 +99,7 @@ export interface VisualAssetSpec {
   license_info: string;
   attribution: string;
   match_score: number;
+  secondary_assets?: string[];
 }
 
 export interface SceneSpec {

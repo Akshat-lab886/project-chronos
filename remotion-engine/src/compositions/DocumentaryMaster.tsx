@@ -23,6 +23,7 @@ import { GraphicOverlays } from "../components/GraphicOverlays";
 import { FilmGrade } from "../components/FilmGrade";
 import { MasterFilmGrade } from "../components/MasterFilmGrade";
 import { ParallaxLayer } from "../components/ParallaxLayer";
+import { MultiImageCrossfade } from "../components/MultiImageCrossfade";
 import { scenesWithTiming } from "../types/schema";
 
 export interface DocumentaryMasterProps {
@@ -66,14 +67,17 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
     if (uri.startsWith("http://") || uri.startsWith("https://") || uri.startsWith("file://")) {
       return uri;
     }
-    // Normalize: strip leading slash if present, keep "workspace/" prefix
-    // since assets are copied to public/workspace/
+    // Normalize: strip leading slash if present, ensure "workspace/" prefix
+    // since assets are copied to public/workspace/ by the backend
     let cleanPath = uri;
     // Remove leading slash from absolute-style paths
     if (cleanPath.startsWith("/")) {
       cleanPath = cleanPath.substring(1);
     }
-    // Keep the full path as-is for staticFile() resolution
+    // Auto-prepend "workspace/" if missing (for paths like "assets/foo.mp3")
+    if (!cleanPath.startsWith("workspace/") && !cleanPath.startsWith("static/")) {
+      cleanPath = `workspace/${cleanPath}`;
+    }
     return staticFile(cleanPath);
   };
 
@@ -107,7 +111,13 @@ export const DocumentaryMaster: React.FC<DocumentaryMasterProps> = ({
             {/* Background Visual Asset */}
             {assetPath && !isMap && (
               <>
-                {visualAsset.motion_preset === "PARALLAX_DRIFT" ? (
+                {visualAsset.secondary_assets && visualAsset.secondary_assets.length > 0 ? (
+                  <MultiImageCrossfade
+                    primaryUri={assetPath}
+                    secondaryUris={visualAsset.secondary_assets.map(uri => resolveAssetPath(uri))}
+                    durationInFrames={scene.duration_frames}
+                  />
+                ) : visualAsset.motion_preset === "PARALLAX_DRIFT" ? (
                   <ParallaxLayer
                     src={assetPath}
                     type={isImage ? "image" : "video"}

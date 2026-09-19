@@ -18,28 +18,28 @@ export interface KineticCaptionsProps {
 }
 
 /**
- * KineticCaptions — Word-level highlighted typography.
+ * KineticCaptions — Premium word-level highlighted typography.
  *
- * Uses pure inline styles (no Tailwind classes) to guarantee rendering
- * in Remotion's headless Chromium environment where CSS may not be bundled.
- *
- * - Words have trailing whitespace to prevent merging
- * - Centered flex-wrap with gap for consistent horizontal positioning
- * - Rolling window: only renders words active ±20 frames from current frame
+ * - Bebas Neue / Impact style display font (uppercase, condensed, bold)
+ * - Letter-spaced, cinema-grade text
+ * - Active word: golden glow + slight scale-up
+ * - Inactive: bright white with soft drop-shadow for legibility on any background
+ * - Black gradient strip behind text for guaranteed contrast
+ * - Rolling window: only renders words active ±30 frames from current frame
  */
 export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
   captions,
   startFrame,
   durationInFrames,
   style,
-  fontSize = 48,
-  maxWidth = 80,
+  fontSize = 64,
+  maxWidth = 88,
 }) => {
   const frame = useCurrentFrame();
   const currentAbsFrame = startFrame + frame;
 
   // Filter words within active rolling window
-  const windowSize = 20;
+  const windowSize = 30;
   const activeWords = captions.filter(
     (w) => currentAbsFrame >= w.start_frame - windowSize &&
            currentAbsFrame <= w.end_frame + windowSize
@@ -51,7 +51,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 80,
+        bottom: 100,
         left: 0,
         right: 0,
         display: "flex",
@@ -62,19 +62,28 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
         ...style,
       }}
     >
+      {/* Gradient backdrop strip for guaranteed legibility */}
       <div
         style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          bottom: 60,
+          height: 200,
+          background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.85) 100%)",
+          pointerEvents: "none",
+        }}
+      />
+      <div
+        style={{
+          position: "relative",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          gap: "12px",
-          padding: "12px 28px",
-          backgroundColor: "rgba(0, 0, 0, 0.75)",
-          backdropFilter: "blur(8px)",
-          borderRadius: "16px",
-          border: "1px solid rgba(255, 255, 255, 0.15)",
+          gap: "0 18px",
           maxWidth: `${maxWidth}%`,
+          padding: "16px 0",
         }}
       >
         {activeWords.map((token, index) => {
@@ -82,56 +91,63 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
             currentAbsFrame >= token.start_frame &&
             currentAbsFrame <= token.end_frame;
 
-          // Opacity with fade in/out
-          let opacity = 0.5;
-          if (frame >= token.start_frame - 10 && frame < token.start_frame) {
-            opacity = interpolate(frame, [token.start_frame - 10, token.start_frame], [0, 1]);
+          // Opacity: active = 1, fading in/out smoothly
+          let opacity = 0.4;
+          if (frame >= token.start_frame - 8 && frame < token.start_frame) {
+            opacity = interpolate(frame, [token.start_frame - 8, token.start_frame], [0, 1]);
           } else if (isActive) {
             opacity = 1;
-          } else if (frame > token.end_frame && frame <= token.end_frame + 15) {
-            opacity = interpolate(frame, [token.end_frame, token.end_frame + 15], [1, 0]);
+          } else if (frame > token.end_frame && frame <= token.end_frame + 12) {
+            opacity = interpolate(frame, [token.end_frame, token.end_frame + 12], [1, 0]);
           }
 
-          // Scale spring effect
+          // Scale spring effect on active word
           let scale = 1;
           if (isActive) {
             const wordProgress = (frame - token.start_frame) / Math.max(1, token.end_frame - token.start_frame);
-            scale = interpolate(wordProgress, [0, 0.3, 1], [1.15, 1.0, 1.0], {
+            scale = interpolate(wordProgress, [0, 0.25, 1], [1.08, 1.0, 1.0], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             });
           }
 
-          // Color: gold for highlighted+active, cyan for active, white for inactive
+          // Color & glow:
+          // - Active highlighted: gold (#FFD700) with strong glow
+          // - Active regular: cyan (#00E5FF) with subtle glow
+          // - Inactive: bright white (#FFFFFF) with soft drop shadow
           let color = "#FFFFFF";
-          let textShadow = "0 2px 4px rgba(0, 0, 0, 0.8)";
+          let textShadow = "0 2px 12px rgba(0, 0, 0, 0.95), 0 0 4px rgba(0, 0, 0, 0.9)";
+          let fontWeight = 800;
           if (isActive) {
             if (token.is_highlight) {
               color = "#FFD700";
-              textShadow = "0 0 10px #FFD700, 0 0 20px rgba(255, 215, 0, 0.8)";
+              textShadow = "0 0 20px rgba(255, 215, 0, 0.95), 0 0 40px rgba(255, 215, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.9)";
             } else {
-              color = "#00FFFF";
-              textShadow = "0 0 8px #00FFFF, 0 0 16px rgba(0, 255, 255, 0.7)";
+              color = "#FFFFFF";
+              textShadow = "0 0 16px rgba(0, 229, 255, 0.85), 0 0 32px rgba(0, 229, 255, 0.5), 0 2px 8px rgba(0, 0, 0, 0.9)";
             }
+            fontWeight = 900;
           } else if (token.is_highlight) {
-            color = "#B8860B";
-            textShadow = "0 0 5px rgba(184, 134, 11, 0.5)";
+            color = "#FFC940";
+            textShadow = "0 0 6px rgba(255, 201, 64, 0.6), 0 2px 8px rgba(0, 0, 0, 0.9)";
           }
 
           return (
             <span
               key={`${token.word}_${index}`}
               style={{
+                fontFamily: '"Bebas Neue", "Impact", "Anton", "Arial Black", sans-serif',
                 fontSize: `${fontSize}px`,
-                fontWeight: isActive ? 700 : 500,
+                fontWeight,
                 color,
                 textShadow,
                 opacity,
                 transform: `scale(${scale})`,
-                transition: "all 0.1s ease-out",
+                transition: "all 0.08s ease-out",
                 whiteSpace: "nowrap",
                 textTransform: "uppercase",
-                letterSpacing: "1px",
+                letterSpacing: "2.5px",
+                lineHeight: 1.1,
                 display: "inline-block",
               }}
             >

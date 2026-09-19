@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Premium display font import for cinematic captions */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Inter:wght@400;600;700;800;900&display=swap');
+
 /* Project Chronos — Custom base styles */
 body {
   margin: 0;

@@ -207,6 +207,8 @@ class VisualAssetSpec(BaseModel):
     license_info: str = ""
     attribution: str = ""
     match_score: float = Field(ge=0.0, le=100.0, default=0.0)
+    # Optional: list of secondary asset URIs for crossfade variety within the scene
+    secondary_assets: list[str] = Field(default_factory=list)
 
 
 class SceneSpec(BaseModel):
